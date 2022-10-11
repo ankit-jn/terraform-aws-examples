@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS -> IAM Example: AWS Organization
+# ARJ-Stack: Terraform AWS -> IAM Example: AWS organization
 
 This Example configuration is a demonstration of [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-iam) utilization to create AWS organization.
 
@@ -7,6 +7,19 @@ This Example configuration is a demonstration of [Module: Terraform AWS IAM](htt
 
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
+| 1 | Account Alias | `arjstack` |  |
+| 2 | Organization |  | The AWS Organization |
+| 3 | Organizational Units | `Infrastructure` | Root Level OU |
+| 4 | Organizational Units | `SDLC` | Child OU of `Infrastructure` |
+| 5 | Organizational Units | `MarketingQA` | Child OU of `SDLC` |
+| 6 | Organizational Units | `Production` | Child OU of `Infrastructure` |
+| 7 | Organizational Units | `ConsumerService` | Child OU of `Production` |
+| 8 | Organizational Units | `Marketing` | Child OU of `Production` |
+| 9 | Organizations Account | `arjstack_identity` | Member Account |
+| 10 | Organizations Account | `arjstack_dev` | Member Account |
+| 11 | Organizations Account | `arjstack_test` | Member Account |
+| 12 | Organizational Policy | `scp-prevent-external-sharing` | `SERVICE_CONTROL_POLICY` |
+| 13 | Policy Attachment | | Attachment of Policy `scp-prevent-external-sharing` to the Organization |
 
 ## Requirements
 
