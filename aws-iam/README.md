@@ -46,12 +46,6 @@ This Example configuration is used to create AWS organization.
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-iam/iam-organization) for the code-base to utilize [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-iam) in order to create AWS organization.
 
-#### IAM Example: Manage IAM resources in AWS organization and its member accounts
-
-This Example configuration is used to manage Organization structure and to manage IAM resources in a Organization's member accounts.
-
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-iam/iam-organizations-complete) for the code-base to utilize [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-iam) in order to manage Organization structure and to manage IAM resources in a Organization's member accounts.
-
 ## Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-vpc/graphs/contributors).
