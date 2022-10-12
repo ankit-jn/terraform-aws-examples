@@ -17,7 +17,7 @@ This Example configuration is a demonstration of [Module: Terraform AWS IAM](htt
 | 3 | IAM Policy | `arjstack-ci-cd-service-access` | Policy File: `/policies/arjstack-s3-readonly-access.json` |
 | 4 | IAM Policy | `arjstack-s3-readonly-access` | Policy File: `/policies/arjstack-s3-readonly-access.json` |
 | 5 | IAM Policy | `arjstack-support-access` | Policy File: `/policies/arjstack-support-access.json` |
-| 6 | IAM Policy | `Developers-AssumeRolesPolicy` | It is code generated policy which will be assigned to the Group `Developer`. The policy will have the permissions of assuming Account Trust based roles |
+| 6 | IAM Policy | `Developers-AssumeRolesPolicy` | Policy File: `/policies/Developers-AssumeRolesPolicy.json` |
 
 #### IAM Roles - AWS Service Linked Roles
 
