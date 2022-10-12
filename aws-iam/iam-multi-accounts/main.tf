@@ -1,10 +1,12 @@
 module "iam_identity_account" {
     source = "git::https://github.com/arjstack/terraform-aws-iam.git"
-   
+    
     identity_account  = true
 
     manage_account_password_policy  = false
     create_force_mfa_policy         = true
+
+    policies = var.identity_policies
 
     groups  = var.groups
     users   = var.users

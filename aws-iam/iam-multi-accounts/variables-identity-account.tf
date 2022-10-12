@@ -1,28 +1,60 @@
+variable "identity_policies" {
+    default = [
+                {
+                    # Replace xxxxxxxxxxxx with actual account ids in 
+                    # policy document #policies/Architects-AssumableRolePolicy.json
+                    name        = "Architects-AssumableRolePolicy"
+                    description = "Architects Assume Role Policy"
+                    tags = {
+                        "Name"  = "Architects-AssumableRolePolicy"
+                    }
+                },
+                {
+                    # Replace xxxxxxxxxxxx with actual account ids in 
+                    # policy document #policies/Developers-AssumableRolePolicy.json
+                    name        = "Developers-AssumableRolePolicy"
+                    description = "Developers Assume Role Policy"
+                    tags = {
+                        "Name"  = "Developers-AssumableRolePolicy"
+                    }
+                },
+                {
+                    # Replace xxxxxxxxxxxx with actual account ids in 
+                    # policy document #policies/DevOpsEngineers-AssumableRolePolicy.json
+                    name        = "DevOpsEngineers-AssumableRolePolicy"
+                    description = "DevOpsEngineers Assume Role Policy"
+                    tags = {
+                        "Name"  = "DevOpsEngineers-AssumableRolePolicy"
+                    }
+                }
+            ]
+}
+
 variable "groups" {
     default =  [
                     {
-                        name = "Architects" 
-                        assumable_roles = [
-                            # Please replace the AWS account id (the one where assumable role is created)
-                           "arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVAdministratorRole"
-                        ]         
+                        name = "Architects"  
+                        policy_map = {
+                            policy_names = [
+                                "Architects-AssumableRolePolicy"
+                            ] 
+                        }       
                     },
                     {
                         name = "Developers"
-                        assumable_roles = [
-                            # Please replace the AWS account id (the one where assumable role is created)
-                           "arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVReaderRole",
-                           "arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVApplicationDevelopmentRole",
-                           "arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVSupportRole",
-                        ] 
+                        policy_map = {
+                            policy_names = [
+                                "Developers-AssumableRolePolicy"
+                            ] 
+                        } 
                     },
                     {
                         name = "DevOpsEngineeres"
-                        assumable_roles = [
-                            # Please replace the AWS account id (the one where assumable role is created)
-                            "arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVReaderRole",
-                            "arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVDevOpsRole"
-                        ]
+                        policy_map = {
+                            policy_names = [
+                                "DevOpsEngineers-AssumableRolePolicy"
+                            ] 
+                        } 
                     },
                 ]
 }

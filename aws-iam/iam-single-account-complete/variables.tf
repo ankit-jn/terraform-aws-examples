@@ -27,6 +27,15 @@ variable "policies" {
                     tags = {
                         "Name"  = "s3-readonly-access"
                     }
+                },
+                {
+                    # Replace xxxxxxxxxxxx with actual account ids in 
+                    # policy document #policies/Developers-AssumableRolePolicy.json
+                    name        = "Developers-AssumableRolePolicy"
+                    description = "Developers Assume Role Policy"
+                    tags = {
+                        "Name"  = "Developers-AssumableRolePolicy"
+                    }
                 }
             ]
 }
@@ -120,19 +129,14 @@ variable "groups" {
                         name = "Developers"
                         policy_map = {
                             policy_names = [
-                                "arjstack-application-development"
+                                "arjstack-application-development",
+                                "Developers-AssumableRolePolicy"
                             ]
                             policy_arns = [
                                 "arn:aws:iam::aws:policy/IAMReadOnlyAccess",
                                 "arn:aws:iam::aws:policy/AWSSupportAccess"
                             ] 
                         }
-                        assumable_roles = [
-                            # Please replace the AWS account id (the one where assumable role is created)
-                            # It could also be the one created in the same account trusted for the self
-                            # like for the self account case, it could be one of the roles defined in property - trusted_account_roles
-                            "arn:aws:iam::xxxxxxxxxxxx:role/ARJCrossAccountSupportRole",
-                        ] 
                     },
                     {
                         name = "DevOpsEngineeres"
