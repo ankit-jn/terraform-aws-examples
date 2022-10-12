@@ -35,9 +35,9 @@ This Example configuration is a demonstration of [Module: Terraform AWS IAM](htt
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
 | 1 | IAM Policy: MFA Enforcement | `Policy-ForceMFA` | No Policy file is required as it is generated through code |
-| 2 | IAM Policy | `Developers-AssumeRolesPolicy` | It is code generated policy which will be assigned to the Group `Developer`. <br>The policy will have the following permissions of assuming Account Trust based roles<br>&nbsp;&nbsp; `arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVSupportRole`<br>&nbsp;&nbsp; `arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVReaderRole`<br>&nbsp;&nbsp; `arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVApplicationDevelopmentRole` |
-| 3 | IAM Policy | `DevOpsEngineeres-AssumeRolesPolicy` | It is code generated policy which will be assigned to the Group `DevOpsEngineeres`. <br>The policy will have the following permissions of assuming Account Trust based roles<br>&nbsp;&nbsp; `arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVReaderRole`<br>&nbsp;&nbsp; `arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVDevOpsRole` |
-| 4 | IAM Policy | `Architects-AssumeRolesPolicy` | It is code generated policy which will be assigned to the Group `Architects`. <br>The policy will have the following permissions of assuming Account Trust based roles<br>&nbsp;&nbsp; `arn:aws:iam::xxxxxxxxxxxx:role/ARJDEVAdministratorRole` |
+| 2 | IAM Policy | `Developers-AssumeRolesPolicy` | Policy File: `/policies/Developers-AssumeRolesPolicy.json` |
+| 3 | IAM Policy | `DevOpsEngineeres-AssumeRolesPolicy` | Policy File: `/policies/DevOpsEngineeres-AssumeRolesPolicy.json` |
+| 4 | IAM Policy | `Architects-AssumeRolesPolicy` | Policy File: `/policies/arjstack-dev-application-development.json` |
 
 #### IAM Groups and Policy Attachment
 
