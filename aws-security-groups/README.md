@@ -15,7 +15,7 @@ This Example configuration is a demonstration of [Module: Terraform AWS IAM](htt
  6 | Security Group Rule |  | Self Egress Rule |
  7 | Security Group Rule |  | Egress Rules for Destination to IPv4 CIDRs |
  8 | Security Group Rule |  | Egress Rules for Destination to IPv6 CIDRs |
- 5 | Security Group Rule |  | Egress Rule for Destination to Other SGs  |
+ 9 | Security Group Rule |  | Egress Rule for Destination to Other SGs  |
  
 ## Requirements
 
