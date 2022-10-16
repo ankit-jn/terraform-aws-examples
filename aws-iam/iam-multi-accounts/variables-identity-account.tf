@@ -34,27 +34,27 @@ variable "groups" {
     default =  [
                     {
                         name = "Architects"  
-                        policy_map = {
-                            policy_names = [
-                                "Architects-AssumableRolePolicy"
-                            ] 
-                        }       
+                        policy_list = [
+                            {
+                                "name"  = "Architects-AssumableRolePolicy"
+                            },
+                        ]      
                     },
                     {
                         name = "Developers"
-                        policy_map = {
-                            policy_names = [
-                                "Developers-AssumableRolePolicy"
-                            ] 
-                        } 
+                        policy_list = [
+                            {
+                                "name"  = "Developers-AssumableRolePolicy"
+                            },
+                        ]
                     },
                     {
                         name = "DevOpsEngineeres"
-                        policy_map = {
-                            policy_names = [
-                                "DevOpsEngineers-AssumableRolePolicy"
-                            ] 
-                        } 
+                        policy_list = [
+                            {
+                                "name"  = "DevOpsEngineers-AssumableRolePolicy"
+                            },
+                        ]
                     },
                 ]
 }

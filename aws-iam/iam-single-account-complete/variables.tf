@@ -123,35 +123,43 @@ variable "groups" {
     default =  [
                     {
                         name = "Architects" 
-                        policy_map = {
-                            policy_arns = [
-                                "arn:aws:iam::aws:policy/AdministratorAccess",
-                            ] 
-                        }          
+                        policy_list = [
+                            {
+                                "name"  = "AdministratorAccess"
+                                "arn"   = "arn:aws:iam::aws:policy/AdministratorAccess"
+                            }
+                        ]    
                     },
                     {
                         name = "Developers"
-                        policy_map = {
-                            policy_names = [
-                                "arjstack-application-development",
-                                "Developers-AssumableRolePolicy"
-                            ]
-                            policy_arns = [
-                                "arn:aws:iam::aws:policy/IAMReadOnlyAccess",
-                                "arn:aws:iam::aws:policy/AWSSupportAccess"
-                            ] 
-                        }
+                        policy_list = [
+                            {
+                                "name" = "arjstack-application-development"
+                            },
+                            {
+                                "name" = "Developers-AssumableRolePolicy"
+                            },
+                            {
+                                "name"  = "IAMReadOnlyAccess"
+                                "arn"   = "arn:aws:iam::aws:policy/IAMReadOnlyAccess"
+                            },
+                            {
+                                "name"  = "AWSSupportAccess"
+                                "arn"   = "arn:aws:iam::aws:policy/AWSSupportAccess"
+                            }
+                        ]
                     },
                     {
                         name = "DevOpsEngineeres"
-                        policy_map = {
-                            policy_names = [
-                                "arjstack-ci-cd-service-access"
-                            ]
-                            policy_arns = [
-                                "arn:aws:iam::aws:policy/IAMReadOnlyAccess",
-                            ] 
-                        }
+                        policy_list = [
+                            {
+                                "name" = "arjstack-ci-cd-service-access"
+                            },
+                            {
+                                "name"  = "IAMReadOnlyAccess"
+                                "arn"   = "arn:aws:iam::aws:policy/IAMReadOnlyAccess"
+                            }
+                        ]
                     },
                 ]
 }
