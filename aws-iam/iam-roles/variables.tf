@@ -35,11 +35,11 @@ variable "trusted_account_roles" {
                         "xxxxxxxxxxxx",
                         "xxxxxxxxxxxx",
                     ]
-                    policy_map = {
-                        policy_names = [
-                            "arjstack-support-access"
-                        ] 
-                    } 
+                    policy_list = [
+                        {
+                            "name" = "arjstack-support-access"
+                        }
+                    ]
                     tags = {
                         # Replace xxxxxxxxxxxx with actual account id
                         "Name"      = "Trust Entity - AWS Account:xxxxxxxxxxxx"
@@ -54,16 +54,19 @@ variable "trusted_account_roles" {
                         # Replace xxxxxxxxxxxx with actual account ids
                         "xxxxxxxxxxxx",
                         "xxxxxxxxxxxx",
-                    ]                
-                    policy_map = {
-                        policy_names = [
-                            "arjstack-ci-cd-service-access",
-                            "arjstack-s3-readonly-access"
-                        ]
-                        policy_arns = [
-                            "arn:aws:iam::aws:policy/AmazonDevOpsGuruReadOnlyAccess",
-                        ] 
-                    }
+                    ]
+                    policy_list = [
+                        {
+                            "name" = "arjstack-ci-cd-service-access"
+                        },
+                        {
+                            "name" = "arjstack-s3-readonly-access"
+                        },
+                        {
+                            "name"  = "AmazonDevOpsGuruReadOnlyAccess"
+                            "arn"   = "arn:aws:iam::aws:policy/AmazonDevOpsGuruReadOnlyAccess"
+                        }
+                    ]
                     tags = {
                         # Replace xxxxxxxxxxxx with actual account id
                         "Name"      = "Trust Entity - AWS Account:xxxxxxxxxxxx"
@@ -83,14 +86,15 @@ variable "service_linked_roles" {
                         "ecs.amazonaws.com",
                         "ec2.amazonaws.com"
                     ]
-                    policy_map = {
-                        policy_names = [
-                            "arjstack-s3-readonly-access"
-                        ] 
-                        policy_arns = [
-                            "arn:aws:iam::aws:policy/AWSCloudTrail_ReadOnlyAccess",
-                        ]
-                    } 
+                    policy_list = [
+                        {
+                            "name" = "arjstack-s3-readonly-access"
+                        },
+                        {
+                            "name"  = "AWSCloudTrail_ReadOnlyAccess"
+                            "arn"   = "arn:aws:iam::aws:policy/AWSCloudTrail_ReadOnlyAccess"
+                        }
+                    ]
                     tags = {
                         "Name"      = "Trusted Service - EC2 and ECS"
                         "Purpose"   = "Support"

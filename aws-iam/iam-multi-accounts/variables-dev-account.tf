@@ -42,11 +42,12 @@ variable "dev_trusted_account_roles" {
                         "xxxxxxxxxxxx",
                         "xxxxxxxxxxxx",
                     ]
-                    policy_map = {
-                        policy_arns = [
-                            "arn:aws:iam::aws:policy/AdministratorAccess",
-                        ] 
-                    }
+                    policy_list = [
+                        {
+                            "name"  = "AdministratorAccess"
+                            "arn"   = "arn:aws:iam::aws:policy/AdministratorAccess"
+                        },
+                    ] 
                     tags = {
                         # Replace xxxxxxxxxxxx with actual account id
                         "Name"      = "Trust Entity - AWS Account:xxxxxxxxxxxx"
@@ -62,11 +63,12 @@ variable "dev_trusted_account_roles" {
                         "xxxxxxxxxxxx",
                         "xxxxxxxxxxxx",
                     ]
-                    policy_map = {
-                        policy_arns = [
-                            "arn:aws:iam::aws:policy/ReadOnlyAccess",
-                        ] 
-                    }
+                    policy_list = [
+                        {
+                            "name"  = "ReadOnlyAccess"
+                            "arn"   = "arn:aws:iam::aws:policy/ReadOnlyAccess"
+                        },
+                    ]
                     tags = {
                         # Replace xxxxxxxxxxxx with actual account id
                         "Name"      = "Trust Entity - AWS Account:xxxxxxxxxxxx"
@@ -82,11 +84,11 @@ variable "dev_trusted_account_roles" {
                         "xxxxxxxxxxxx",
                         "xxxxxxxxxxxx",
                     ]
-                    policy_map = {
-                        policy_names = [
-                            "arjstack-dev-application-development"
-                        ] 
-                    } 
+                    policy_list = [
+                        {
+                            "name" = "arjstack-dev-application-development"
+                        },
+                    ]
                     tags = {
                         # Replace xxxxxxxxxxxx with actual account id
                         "Name"      = "Trust Entity - AWS Account:xxxxxxxxxxxx"
@@ -102,11 +104,11 @@ variable "dev_trusted_account_roles" {
                         "xxxxxxxxxxxx",
                         "xxxxxxxxxxxx",
                     ]
-                    policy_map = {
-                        policy_names = [
-                            "arjstack-dev-support-access"
-                        ] 
-                    } 
+                    policy_list = [
+                        {
+                            "name" = "arjstack-dev-support-access"
+                        },
+                    ] 
                     tags = {
                         # Replace xxxxxxxxxxxx with actual account id
                         "Name"      = "Trust Entity - AWS Account:xxxxxxxxxxxx"
@@ -122,15 +124,18 @@ variable "dev_trusted_account_roles" {
                         "xxxxxxxxxxxx",
                         "xxxxxxxxxxxx",
                     ]                
-                    policy_map = {
-                        policy_names = [
-                            "arjstack-dev-ci-cd-service-access",
-                            "arjstack-dev-s3-readonly-access"
-                        ]
-                        policy_arns = [
-                            "arn:aws:iam::aws:policy/AmazonDevOpsGuruReadOnlyAccess",
-                        ] 
-                    }
+                    policy_list = [
+                        {
+                            "name" = "arjstack-dev-ci-cd-service-access"
+                        },
+                        {
+                            "name" = "arjstack-dev-s3-readonly-access"
+                        },
+                        {
+                            "name"  = "AmazonDevOpsGuruReadOnlyAccess"
+                            "arn"   = "arn:aws:iam::aws:policy/AmazonDevOpsGuruReadOnlyAccess"             
+                        },
+                    ]
                     tags = {
                         # Replace xxxxxxxxxxxx with actual account id
                         "Name"      = "Trust Entity - AWS Account:xxxxxxxxxxxx"
@@ -150,14 +155,15 @@ variable "dev_service_linked_roles" {
                         "ecs.amazonaws.com",
                         "ec2.amazonaws.com"
                     ]
-                    policy_map = {
-                        policy_names = [
-                            "arjstack-dev-s3-readonly-access"
-                        ] 
-                        policy_arns = [
-                            "arn:aws:iam::aws:policy/AWSCloudTrail_ReadOnlyAccess",
-                        ]
-                    } 
+                    policy_list = [
+                        {
+                            "name" = "arjstack-dev-s3-readonly-access"
+                        },
+                        {
+                            "name"  = "arjstack-support-access"
+                            "arn"   =  "arn:aws:iam::aws:policy/AWSCloudTrail_ReadOnlyAccess"
+                        }
+                    ]
                     tags = {
                         "Name"      = "Trusted Service - EC2 and ECS"
                         "Purpose"   = "Support"
