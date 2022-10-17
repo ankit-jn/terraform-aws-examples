@@ -1,7 +1,33 @@
-# ARJ-Stack: Terraform AWS Autoscaling Group Examples
+# ARJ-Stack: Terraform AWS Auto Scaling Examples
 
-Set of Example Configurations to create AWS Autoscaling Group resource
+Set of Example Configurations to create AWS Auto Scaling Group resources
 
+
+#### Auto Scaling Example: ASG with Launch Template - Simple
+
+This Example configuration is used to create ASG with Launch Template with existing IAM Roles and IAM Policies.
+
+Resources to be Provisioned:
+
+- Auto Scaling Group
+- Launch template
+- Instance Profile with Existing IAM role ARN
+
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-asg/asg-launch-template-simple) for the code-base to utilize [Module: Terraform AWS Auto Scaling Group](https://github.com/arjstack/terraform-aws-asg) in order to Create ASG with Launch Template, Instance profile and IAM resources
+
+#### Auto Scaling Example: ASG with Launch Template - With IAM Resources
+
+This Example configuration is used to create ASG with Launch Template as well as IAM Roles and IAM Policies. 
+
+Resources to be Provisioned:
+
+- Auto Scaling Group
+- Launch template
+- Instance Profile with the following IAM resources
+    - IAM Role (Service Linked i.e. Trusted Entity - EC2 Service)
+    - IAM Policies (which will be attached to IAM Role)
+
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-asg/asg-launch-template) for the code-base to utilize [Module: Terraform AWS Auto Scaling Group](https://github.com/arjstack/terraform-aws-asg) in order to Create ASG with Launch Template, Instance profile and IAM resources
 
 ## Authors
 
