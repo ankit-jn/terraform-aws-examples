@@ -15,5 +15,5 @@ output "zone_id" {
 
 output "sg_id" {
     description = "The Security Group ID associated to ALB"
-    value       = local.create_security_group ? module.alb_security_group[0].security_group_id : ""
+    value       = module.alb.sg_id
 }
