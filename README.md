@@ -19,6 +19,9 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-asg) for utilizing [Module: Terraform AWS Autoscaling Groups](https://github.com/arjstack/terraform-aws-asg)
 
+#### Application Load Balancer Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-alb) for utilizing [Module: Terraform AWS Application Load Balancer](https://github.com/arjstack/terraform-aws-alb)
 
 #### ECS Examples
 
