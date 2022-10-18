@@ -6,13 +6,13 @@ Set of Example Configurations to create AWS Load Balancer resources
 
 This Example configuration is used to create Application Load Balancer.
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/alb-only) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to Create ASG with Launch Template, Instance profile and Existing IAM resources
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/alb-only) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to create Application Load Balancer
 
 #### AWS Load Balancer Example: Network Load Balancer Only
 
 This Example configuration is used to create Network Load Balancer
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/nlb-only) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to Create ASG with Launch Template, Instance profile and new IAM resources having strategy of targeting multiple Instances.
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/nlb-only) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to create Network Load Balancer
 
 
 ## Authors
