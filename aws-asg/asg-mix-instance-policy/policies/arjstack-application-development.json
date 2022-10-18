@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sns:*",
+                "ecr:*",
+                "s3:*",
+                "ec2:*",
+                "logs:*",
+                "cloudtrail:*",
+                "ecs:*",
+                "elasticfilesystem:*",
+                "events:*",
+                "firehose:*",
+                "iam:*",
+                "kinesisanalytics:*",
+                "kinesis:*",
+                "kms:*",
+                "lambda:*",
+                "logs:*",
+                "rds:*",
+                "s3:*",
+                "ses:*",
+                "sns:*",
+                "sqs:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
