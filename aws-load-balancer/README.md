@@ -14,6 +14,11 @@ This Example configuration is used to create Network Load Balancer
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/nlb-only) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to create Network Load Balancer
 
+#### AWS Load Balancer Example: Gateway Load Balancer Only
+
+This Example configuration is used to create Gateway Load Balancer.
+
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/gateway-lb-only) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to create Gateway Load Balancer
 
 ## Authors
 
