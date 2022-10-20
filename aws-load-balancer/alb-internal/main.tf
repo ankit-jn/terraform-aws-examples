@@ -3,6 +3,7 @@ module "alb" {
     
     name = "arjstack-alb"
     lb_type = "application"
+    internal = true
     
     subnets = [ "subnet-1xx.......", "subnet-2xx......." ]
     
@@ -13,7 +14,7 @@ module "alb" {
     # security_groups = ["sg-xxxxxx......"]
 
     create_sg = true
-    vpc_id = "vpc-xxx........."
+    vpc_id = "vpc-xxxx......."
     sg_name = "arjstack-alb-sg"
     
     sg_rules = {
@@ -34,7 +35,7 @@ module "alb" {
                             to_port = 80
                             protocol = "tcp"
                             ## Replace IP with actual values
-                            cidr_blocks = ["0.0.0.0/0"]
+                            cidr_blocks = ["10.0.0.0/28"]
                         },
                     ],
         "egress" = [

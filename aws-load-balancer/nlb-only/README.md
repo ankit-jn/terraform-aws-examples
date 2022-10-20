@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS -> ASG with Launch Temaplate
+# ARJ-Stack: Terraform AWS -> Load Balancer Example: Internet Facing Network Load Balancer
 
 This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) utilization to create Network Load Balancer along with Elastic IP Adresses to be used for its networking
 
@@ -8,8 +8,8 @@ This Example configuration is a demonstration of [Module: Terraform AWS Load Bal
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
 | 1 | Network Load Balancer | `arjstack-nlb` |  |
-| 2 | Elastic IP | `arjstack-nlb-eip-<subnet-1>` |  |
-| 2 | Elastic IP | `arjstack-nlb-eip-<subnet-2>` |  |
+| 2 | Elastic IP | `arjstack-nlb-eip-subnet-1xxxx..........` |  |
+| 2 | Elastic IP | `arjstack-nlb-eip-subnet-2x.............` |  |
 
 ## Requirements
 
