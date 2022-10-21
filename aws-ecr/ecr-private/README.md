@@ -5,6 +5,14 @@ This Example configuration is a demonstration of [Module: Terraform AWS Elastic 
 #### Resources to be provisioned as an outcome of this example
 ---
 
+| Sr. No. | Resource Type | Resource Name | Additional Details |
+|:------|:------|:------|:------|
+| 1 | ECR Repository | `flight-service` |  |
+| 2 | ECR Policy |  | ECR policy is attached to repository `flight-service`.<br>Policy File: `/policies/ecr-policy.json` |
+| 3 | ECR Repository | `currency-service` |  |
+| 4 | ECR Policy |  | ECR policy is attached to repository `currency-service`<br>Policy File: `/policies/ecr-policy.json` |
+| 5 | ECR Lifecycle Policy |  | Lifecycle policy is created for repository `flight-service`<br>Lifecycle Policy File: `/policies/flight-service-lifecycle-policy.json` |
+
 ## Requirements
 
 | Name | Version |
