@@ -2,6 +2,7 @@ variable "dev_policies" {
     default = [
                 {
                     name        = "arjstack-dev-application-development"
+                    policy_file = "arjstack-dev-application-development.json"
                     description = "Application Developement Access"
                     tags = {
                         "Name"  = "application-development"
@@ -9,6 +10,7 @@ variable "dev_policies" {
                 },
                 {
                     name        = "arjstack-dev-ci-cd-service-access"
+                    policy_file = "arjstack-dev-ci-cd-service-access.json"
                     description = "AWS CI/CD Service Access"
                     tags = {
                         "Name"  = "ci-cd-service-access"
@@ -16,6 +18,7 @@ variable "dev_policies" {
                 },
                 {
                     name        = "arjstack-dev-support-access"
+                    policy_file = "arjstack-dev-support-access.json"
                     description = "AWS Services read Only Access for support"
                     tags = {
                         "Name"  = "support-access"
@@ -23,6 +26,7 @@ variable "dev_policies" {
                 },
                 {
                     name        = "arjstack-dev-s3-readonly-access"
+                    policy_file = "arjstack-dev-s3-readonly-access.json"
                     description = "S3 read Only Access for support"
                     tags = {
                         "Name"  = "s3-readonly-access"

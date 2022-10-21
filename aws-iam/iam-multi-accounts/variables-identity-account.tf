@@ -2,8 +2,8 @@ variable "identity_policies" {
     default = [
                 {
                     # Replace xxxxxxxxxxxx with actual account ids in 
-                    # policy document #policies/Architects-AssumableRolePolicy.json
                     name        = "Architects-AssumableRolePolicy"
+                    policy_file = "Architects-AssumableRolePolicy.json"
                     description = "Architects Assume Role Policy"
                     tags = {
                         "Name"  = "Architects-AssumableRolePolicy"
@@ -11,8 +11,8 @@ variable "identity_policies" {
                 },
                 {
                     # Replace xxxxxxxxxxxx with actual account ids in 
-                    # policy document #policies/Developers-AssumableRolePolicy.json
                     name        = "Developers-AssumableRolePolicy"
+                    policy_file = "Developers-AssumableRolePolicy.json"
                     description = "Developers Assume Role Policy"
                     tags = {
                         "Name"  = "Developers-AssumableRolePolicy"
@@ -20,8 +20,8 @@ variable "identity_policies" {
                 },
                 {
                     # Replace xxxxxxxxxxxx with actual account ids in 
-                    # policy document #policies/DevOpsEngineers-AssumableRolePolicy.json
                     name        = "DevOpsEngineers-AssumableRolePolicy"
+                    policy_file = "DevOpsEngineers-AssumableRolePolicy.json"
                     description = "DevOpsEngineers Assume Role Policy"
                     tags = {
                         "Name"  = "DevOpsEngineers-AssumableRolePolicy"

@@ -2,6 +2,7 @@ variable "policies" {
     default = [
                 {
                     name        = "arjstack-application-development"
+                    policy_file = "arjstack-application-development.json"
                     description = "Application Developement Access"
                     tags = {
                         "Name"  = "application-development"
@@ -9,6 +10,7 @@ variable "policies" {
                 },
                 {
                     name        = "arjstack-ci-cd-service-access"
+                    policy_file = "arjstack-ci-cd-service-access.json"
                     description = "AWS CI/CD Service Access"
                     tags = {
                         "Name"  = "ci-cd-service-access"
@@ -16,6 +18,7 @@ variable "policies" {
                 },
                 {
                     name        = "arjstack-support-access"
+                    policy_file = "arjstack-support-access.json"
                     description = "AWS Services read Only Access for support"
                     tags = {
                         "Name"  = "support-access"
@@ -23,6 +26,7 @@ variable "policies" {
                 },
                 {
                     name        = "arjstack-s3-readonly-access"
+                    policy_file = "arjstack-s3-readonly-access.json"
                     description = "S3 read Only Access for support"
                     tags = {
                         "Name"  = "s3-readonly-access"
@@ -32,6 +36,7 @@ variable "policies" {
                     # Replace xxxxxxxxxxxx with actual account ids in 
                     # policy document #policies/Developers-AssumableRolePolicy.json
                     name        = "Developers-AssumableRolePolicy"
+                    policy_file = "Developers-AssumableRolePolicy.json"
                     description = "Developers Assume Role Policy"
                     tags = {
                         "Name"  = "Developers-AssumableRolePolicy"

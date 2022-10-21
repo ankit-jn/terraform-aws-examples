@@ -57,6 +57,7 @@ variable "organizations_policies" {
       default = [
                   {
                       name = "scp-prevent-external-sharing"
+                      policy_file = "scp-prevent-external-sharing.json"
                       description = "Prevent external sharing"
                       type = "SERVICE_CONTROL_POLICY"
                       tags = {
