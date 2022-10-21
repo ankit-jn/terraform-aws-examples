@@ -3,6 +3,8 @@ module "nlb" {
     
     name = "arjstack-nlb"
     lb_type = "network"
+
+    vpc_id = "vpc-xxxxx........."
     
     // No need to define `subnets` if `subnet_mappings` are defined, 
     // Even If it is defined in combination with `subnet_mappings`, 

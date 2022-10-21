@@ -32,6 +32,12 @@ This Example configuration is used to create Internet Facing Application Load Ba
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/alb-with-http-listeners) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to create Internet Facing Application Load Balancer with rich combination of target groups and HTTP based listeners and rules
 
+#### AWS Load Balancer Example: Internet Facing Application Load Balancer with HTTPS Listeners
+
+This Example configuration is used to create Internet Facing Application Load Balancer with HTTPS Listeners
+
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/alb-with-https-listeners) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to create Internet Facing Application Load Balancer with  combination of target groups and HTTPS based listeners and rules
+
 ## Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-vpc/graphs/contributors).
