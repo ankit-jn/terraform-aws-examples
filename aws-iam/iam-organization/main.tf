@@ -1,5 +1,5 @@
 module "iam_organization" {
-    source = "git::https://github.com/arjstack/terraform-aws-iam.git"
+    source = "git::https://github.com/arjstack/terraform-aws-iam.git?ref=v1.0.0"
     
     organization_account = true
 

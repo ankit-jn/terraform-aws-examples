@@ -1,5 +1,5 @@
 module "gateway_lb" {
-    source = "git::https://github.com/arjstack/terraform-aws-load-balancer.git"
+    source = "git::https://github.com/arjstack/terraform-aws-load-balancer.git?ref=v1.0.0"
     
     name = "arjstack-gateway-lb"
     lb_type = "gateway"

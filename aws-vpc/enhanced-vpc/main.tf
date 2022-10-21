@@ -1,6 +1,6 @@
 ## Create VPC along with Public subnets
 module "vpc" {
-    source = "git::https://github.com/arjstack/terraform-aws-vpc.git"
+    source = "git::https://github.com/arjstack/terraform-aws-vpc.git?ref=v1.0.0"
     
     vpc_name = var.vpc_name
     ipv4_cidr_block = var.vpc_cidr
@@ -31,7 +31,7 @@ module "vpc" {
 
 ## Infrastructure subnets to be provisioned
 module "subnets_infra" {
-    source = "git::https://github.com/arjstack/terraform-aws-vpc.git"
+    source = "git::https://github.com/arjstack/terraform-aws-vpc.git?ref=v1.0.0"
     
     create_vpc = false
     vpc_id = module.vpc.vpc_config.id
@@ -58,7 +58,7 @@ module "subnets_infra" {
 
 ## Application subnets to be provisioned
 module "subnets_application" {
-    source = "git::https://github.com/arjstack/terraform-aws-vpc.git"
+    source = "git::https://github.com/arjstack/terraform-aws-vpc.git?ref=v1.0.0"
     
     create_vpc = false
     vpc_id = module.vpc.vpc_config.id
@@ -85,7 +85,7 @@ module "subnets_application" {
 
 ## Database subnets to be provisioned
 module "subnets_database" {
-    source = "git::https://github.com/arjstack/terraform-aws-vpc.git"
+    source = "git::https://github.com/arjstack/terraform-aws-vpc.git?ref=v1.0.0"
     
     create_vpc = false
     vpc_id = module.vpc.vpc_config.id

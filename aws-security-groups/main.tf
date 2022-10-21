@@ -1,5 +1,5 @@
 module "security_group" {
-    source = "git::https://github.com/arjstack/terraform-aws-security_groups.git"
+    source = "git::https://github.com/arjstack/terraform-aws-security_groups.git?ref=v1.0.0"
     
     vpc_id = var.vpc_id
     name = var.sg_name

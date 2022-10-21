@@ -1,5 +1,5 @@
 module "alb" {
-    source = "git::https://github.com/arjstack/terraform-aws-load-balancer.git"
+    source = "git::https://github.com/arjstack/terraform-aws-load-balancer.git?ref=v1.0.0"
     
     name = "arjstack-alb"
     lb_type = "application"

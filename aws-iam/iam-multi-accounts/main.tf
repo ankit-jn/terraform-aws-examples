@@ -1,5 +1,5 @@
 module "iam_identity_account" {
-    source = "git::https://github.com/arjstack/terraform-aws-iam.git"
+    source = "git::https://github.com/arjstack/terraform-aws-iam.git?ref=v1.0.0"
     
     identity_account  = true
 
@@ -14,7 +14,7 @@ module "iam_identity_account" {
 }
 
 module "iam_dev_account" {
-    source = "git::https://github.com/arjstack/terraform-aws-iam.git"
+    source = "git::https://github.com/arjstack/terraform-aws-iam.git?ref=v1.0.0"
    
     providers = {
         aws = aws.dev
