@@ -80,9 +80,11 @@ variable "instance_profile_policies" {
   default = [
                 {
                     "name" = "arjstack-s3-readonly-access"
+                    "policy_file" = "arjstack-s3-readonly-access.json"
                 },
                 {
                     "name" = "arjstack-application-development"
+                    "policy_file" = "arjstack-application-development.json"
                 },
                 {
                     "name"  = "AWSCloudTrail_ReadOnlyAccess"
