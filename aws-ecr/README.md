@@ -6,7 +6,7 @@ Set of Example Configurations to create AWS Elastic Container Registry Repositor
 
 This Example configuration is used to create ECR private repository.
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-ecr/ecr-private) for the code-base to utilize [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-ecr) in order to create ECR private repository.
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-ecr/ecr-private) for the code-base to utilize [Module: Terraform AWS Elastic Container Registry Repository](https://github.com/arjstack/terraform-aws-ecr) in order to create ECR private repository.
 
 
 ## Authors
