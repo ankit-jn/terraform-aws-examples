@@ -11,8 +11,8 @@ This Example configuration is a demonstration of [Module: Terraform AWS Load Bal
 | 2 | Target Group | `alb-target-80` | Target Type: `ip`, Target Port: `80` |
 | 3 | Target Group | `alb-target-443-1` | Target Type: `ip`, Target Port: `443` |
 | 4 | Target Group | `alb-target-443-2` | Target Type: `ip`, Target Port: `443` |
-| 5 | Load Balancer Listener |  | Listener Protocol: HTTP, Listener Port: 80<br>Default Action: redirect to HTTPS protocol |
-| 6 | Load Balancer Listener |  | Listener Protocol: HTTPS, Listener Port: 443<br>Default Action: Forward to target <br>- `alb-target-443-1` |
+| 5 | Load Balancer Listener |  | Listener Protocol: `HTTP`, Listener Port: `80`<br>Default Action: redirect to HTTPS protocol |
+| 6 | Load Balancer Listener |  | Listener Protocol: `HTTPS`, Listener Port: `443`<br>Default Action: Forward to target <br>- `alb-target-443-1` |
 | 7 | Load balancer Listener Rule |  | For Listener with protocol: `HTTP` and port: `80`<br>&nbsp;&nbsp;&nbsp;<b>Action:</b> Forward to Target Group `alb-target-443-2`<br>&nbsp;&nbsp;&nbsp;<b>Conditions:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. path patterns - ["/images", "/videos"]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. http request method: `GET` |
 | 8 | Security Group | `arjstack-alb-sg` |  |
 | 9 | Security Group Rule |  | Self Ingress Rule |

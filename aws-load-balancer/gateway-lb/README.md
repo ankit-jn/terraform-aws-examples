@@ -1,6 +1,6 @@
-# ARJ-Stack: Terraform AWS -> ASG with Launch Temaplate
+# ARJ-Stack: Terraform AWS -> Load Balancer Example: Gateway Load Balancer with GENEVE/6081 Listener
 
-This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) utilization to create Gateway Load Balancer
+This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) utilization to create Gateway Load Balancer, target Group and Implicit Listener
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -8,10 +8,9 @@ This Example configuration is a demonstration of [Module: Terraform AWS Load Bal
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
 | 1 | Gateway Load Balancer | `arjstack-gateway-lb` |  |
-| 2 | Security Group | `gatway-lb-sg-test` |  |
-| 3 | Security Group Rule |  | Ingress Rule |
-| 4 | Security Group Rule |  | Ingress Rule for UDP traffic on Port 6081 |
-| 5 | Security Group Rule |  | Egress Rule |
+| 2 | Target Group | `lb-target-instance` | Target Type: `instance`, Target Port: `6081` |
+| 3 | Target Group | `lb-target-ip` | Target Type: `ip`, Target Port: `6081` |
+| 4 | Load Balancer Listener |  | Listener Protocol: `GENEVE`, Listener Port: `6081`<br>Default Action: Forward to Target Group `lb-target-ip`  |
 
 ## Requirements
 
