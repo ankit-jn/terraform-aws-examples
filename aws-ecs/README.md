@@ -14,6 +14,12 @@ This Example configuration is used to create ECS cluster with EC2 instances mana
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-ecs/cluster-ec2) for the code-base to utilize [Module: Terraform AWS ECS](https://github.com/arjstack/terraform-aws-ecs) in order to manage ECS Cluster.
 
+#### ECS Example: ECS Cluster with AWS Fargate and ECS Service
+
+This Example configuration is used to create AWS Fargate ECS Cluster and ECS Service
+
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-ecs/cluster-fargate-with-service) for the code-base to utilize [Module: Terraform AWS ECS](https://github.com/arjstack/terraform-aws-ecs) in order to manage AWS Fargate ECS Cluster and ECS Service.
+
 ## Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
