@@ -1,5 +1,5 @@
 module "ecs" {
-  source = "git::https://github.com/arjstack/terraform-aws-ecs.git"
+  source = "git::https://github.com/arjstack/terraform-aws-ecs.git?ref=v1.0.0"
   
   ## ECS CLuster
   create_cluster = false

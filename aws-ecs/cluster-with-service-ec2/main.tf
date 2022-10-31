@@ -1,6 +1,6 @@
 module "ecs" {
-  #source = "git::https://github.com/arjstack/terraform-aws-ecs.git"
-  source = "../../../terraform-aws-ecs"
+  source = "git::https://github.com/arjstack/terraform-aws-ecs.git?ref=v1.0.0"
+  
   ## ECS CLuster
   cluster_name = "arjstack-test"
   use_fargate = false
