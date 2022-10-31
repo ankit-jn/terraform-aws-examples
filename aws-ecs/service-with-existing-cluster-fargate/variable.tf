@@ -1,45 +1,19 @@
-## ECS Cluster Configurations
-variable "fargate_capacity_providers" {
-  default = {
-    "FARGATE" = {
-        default_strategy = {
-            base = 1
-            weight = 3
-        }
-    }
-    "FARGATE_SPOT" = {
-        default_strategy = {
-            weight = 1
-        }
-    }
-  }
-}
-
 ## Service Discovery Configurations
-variable "create_dns_namespace" {
-  default = true
+variable "enable_service_discovery" {
+    default = true
 }
 
 variable "dns_name" {
-  default = "arjstack.ecs.local"
+    default = "arjstack.ecs.local"
 }
 
 variable "vpc_id" {
-  default     = "vpc-xxx....."
-}
-
-variable "enable_service_discovery" {
-  default = true
+    default = "vpc-xxx....."
 }
 
 ## ECS Service Configurations
-
-variable "create_service" {
-  default  = true
-}
-
 variable "aws_region" {
-  default = "ap-south-1"
+    default = "ap-south-1"
 }
 
 variable "service_name" {
@@ -51,20 +25,6 @@ variable "service_scalability" {
         max_capacity      = 5
         desired_capacity  = 2
     }
-}
-
-variable "container_configurations" {
-  default = {
-    name            = "currency-container"
-    image           = "currency-service"
-    container_port  = 8081
-    host_port       = 8081
-
-    cpu             = 256
-    memory          = 512
-    
-    log_grp_name       = "arjstack-currency"
-  }
 }
 
 variable "policies" {
@@ -176,6 +136,11 @@ variable "load_balancer_configs" {
         target_group_name = "alb-target-8081"
         container_name = "currency-container"
         container_port = 8081
+      }
+      config2 = {
+        target_group_name = "alb-target-8082"
+        container_name = "currency-container"
+        container_port = 8082
       }
     }
 }

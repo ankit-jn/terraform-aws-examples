@@ -2,27 +2,23 @@ module "ecs" {
   source = "git::https://github.com/arjstack/terraform-aws-ecs.git"
   
   ## ECS CLuster
-  cluster_name = "arjstack-dev"
+  create_cluster = false
+  cluster_name = "arjstack-dev" ## Existing ECS Cluster Name
   use_fargate = true
 
-  enable_cloudwatch_container_insights = true
-
-  fargate_capacity_providers = var.fargate_capacity_providers
-
   ## Service Discovery
-  create_dns_namespace = var.create_dns_namespace
-  dns_name = var.dns_name
   vpc_id = var.vpc_id
   enable_service_discovery = var.enable_service_discovery
+  dns_name = var.dns_name
 
   ## ECS Service
-  create_service = var.create_service
+  create_service = true
   aws_region = var.aws_region
   
   service_name = var.service_name
   service_scalability = var.service_scalability
   
-  container_configurations = var.container_configurations
+  container_definition = data.template_file.container_def.rendered
 
   policies = var.policies
   
@@ -42,4 +38,8 @@ module "ecs" {
   load_balancer_configs = var.load_balancer_configs
 
   create_log_group = var.create_log_group
+}
+
+data template_file "container_def" {
+    template = file("${path.root}/container.json.tpl")
 }
