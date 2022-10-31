@@ -1,6 +1,6 @@
 module "ecs" {
-  source = "git::https://github.com/arjstack/terraform-aws-ecs.git?ref=v1.0.0"
-  
+  #source = "git::https://github.com/arjstack/terraform-aws-ecs.git?ref=v1.0.0"
+  source = "../../../terraform-aws-ecs"
   ## ECS CLuster
   cluster_name = "arjstack-dev"
   use_fargate = true
@@ -21,6 +21,8 @@ module "ecs" {
   
   service_name = var.service_name
   service_scalability = var.service_scalability
+  service_task_cpu = 1024
+  service_task_memory = 2048
   
   container_configurations = var.container_configurations
 
