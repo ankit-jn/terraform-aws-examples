@@ -17,6 +17,8 @@ module "ecs" {
   
   service_name = var.service_name
   service_scalability = var.service_scalability
+  service_task_cpu = 1024
+  service_task_memory = 2048
   
   container_definition = data.template_file.container_def.rendered
 
