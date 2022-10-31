@@ -4,7 +4,10 @@ data aws_ssm_parameter "ecs_optimized_ami" {
 
 data template_file "user_data" {
   template = <<EOF
-    echo "testing user Data"
+    #!/bin/bash
+    cat <<'EOF' >> /etc/ecs/ecs.config
+    ECS_CLUSTER=arjstack-testing
+    ECS_LOGLEVEL=debug
   EOF
 }
 

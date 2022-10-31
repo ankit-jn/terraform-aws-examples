@@ -3,7 +3,7 @@ variable "autoscaling_capacity_providers" {
   default = [
               {
                 name = "PRIMARY"
-                asg_name = "arjstack-asg-primary" ## This ASG should be the existing one
+                asg_name = "arjstack-asg" ## This ASG should be the existing one
                 # asg_arn = "<ASG ARN>" ## alternate of asg_name
                 managed_termination_protection = "DISABLED"
                 configure_managed_scaling = true
