@@ -1,6 +1,6 @@
-# ARJ-Stack: Terraform AWS Relational Database Service Examples
+# ARJ-Stack: Terraform AWS Relational Database Service - Amazon Aurora Examples
 
-Set of Example Configurations to create AWS RDS resources
+Set of Example Configurations to create AWS RDS - Amazon Aurora resources
 
 
 ## Authors
