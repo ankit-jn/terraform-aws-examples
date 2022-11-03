@@ -14,7 +14,7 @@ This Example configuration is used to create the following resources:
 - Security Group
 - Secure parameters in SSM Parameter Store
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-rds-aurora/aurora-mysql-cluster) for the code-base to utilize [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/arjstack/terraform-aws-rds-aurora) in order to create Aurora MySQL RDS cluster as stated above.
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-rds-aurora/aurora-mysql) for the code-base to utilize [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/arjstack/terraform-aws-rds-aurora) in order to create Aurora MySQL RDS cluster as stated above.
 
 ## Authors
 
