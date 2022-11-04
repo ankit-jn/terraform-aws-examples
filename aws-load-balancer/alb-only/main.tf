@@ -1,57 +1,19 @@
 module "alb" {
     source = "git::https://github.com/arjstack/terraform-aws-load-balancer.git?ref=v1.0.0"
     
-    name = "arjstack-alb"
-    lb_type = "application"
+    name = var.name
+    lb_type = var.lb_type
     
-    subnets = [ "subnet-1xx.......", "subnet-2xx......." ]
+    subnets = var.subnets
     
-    enable_deletion_protection = false
-    drop_invalid_header_fields = true
+    enable_deletion_protection = var.enable_deletion_protection
+    drop_invalid_header_fields = var.drop_invalid_header_fields
 
-    # create_sg = false
-    # security_groups = ["sg-xxxxxx......"]
-
-    create_sg = true
-    vpc_id = "vpc-xxx........."
-    sg_name = "arjstack-alb-sg"
+    vpc_id = var.vpc_id
     
-    sg_rules = {
-        "ingress" = [
-                        {
-                            rule_name = "Self Ingress Rule"
-                            description = "Self Ingress Rule"
-                            from_port =0
-                            to_port = 0
-                            protocol = "-1"
+    create_sg = var.create_sg
+    sg_name = var.sg_name
+    sg_rules = var.sg_rules
 
-                            self = true
-                        },
-                        {
-                            rule_name = "HTTP-80"
-                            description = "IPv4 Rule"
-                            from_port = 80
-                            to_port = 80
-                            protocol = "tcp"
-                            ## Replace IP with actual values
-                            cidr_blocks = ["0.0.0.0/0"]
-                        },
-                    ],
-        "egress" = [
-                    {
-                        rule_name = "Self Egress Rule"
-                        description = "Self Egress Rule"
-                        from_port = 0
-                        to_port = 0
-                        protocol = "-1"
-
-                        self = true
-                    },
-                ]
-    }
-
-    default_tags = {
-        "CostCenter" = "1234"
-    }    
+    default_tags = var.default_tags
 }
-

@@ -1,46 +1,20 @@
 module "gateway_lb" {
     source = "git::https://github.com/arjstack/terraform-aws-load-balancer.git?ref=v1.0.0"
     
-    name = "arjstack-gateway-lb"
-    lb_type = "gateway"
+    name    = var.name
+    lb_type = var.lb_type
 
-    vpc_id = "vpc-xxxxx........."
-    subnets = [ "subnet-1xxxx..........", "subnet-2x............." ]
+    vpc_id  = var.vpc_id
+    subnets = var.subnets
     
-    enable_deletion_protection = true
-    drop_invalid_header_fields = false
-    enable_cross_zone_load_balancing = true
+    enable_deletion_protection = var.enable_deletion_protection
+    drop_invalid_header_fields = var.drop_invalid_header_fields
+    enable_cross_zone_load_balancing = var.enable_cross_zone_load_balancing
 
-    target_groups = [
-        {
-            name = "lb-target-ip"
-            target_type  = "ip"
-            interval = 60
+    target_groups = var.target_groups
 
-            health_check = {
-                healthy_threshold = 5
-                unhealthy_threshold = 3
-            }            
-        },
-        {
-            name = "lb-target-instance"
-            target_type  = "instance"
-            interval = 60
-
-            health_check = {
-                healthy_threshold = 5
-                unhealthy_threshold = 3
-            }
-        }
-    ]
-
-    gateway_listener = {
-        target_group = "lb-target-ip"
-    }
+    gateway_listener = var.gateway_listener
     
-    default_tags = {
-        "CostCenter" = "1234"
-    }
+    default_tags = var.default_tags
     
 }
-
