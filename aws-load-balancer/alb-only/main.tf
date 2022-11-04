@@ -4,12 +4,11 @@ module "alb" {
     name = var.name
     lb_type = var.lb_type
     
+    vpc_id = var.vpc_id
     subnets = var.subnets
     
     enable_deletion_protection = var.enable_deletion_protection
     drop_invalid_header_fields = var.drop_invalid_header_fields
-
-    vpc_id = var.vpc_id
     
     create_sg = var.create_sg
     sg_name = var.sg_name

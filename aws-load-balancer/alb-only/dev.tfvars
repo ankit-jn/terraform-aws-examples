@@ -1,12 +1,11 @@
 name = "arjstack-alb"
 lb_type = "application"
 
+vpc_id = "vpc-xxx........."
 subnets = [ "subnet-1xx.......", "subnet-2xx......." ]
 
 enable_deletion_protection = false
 drop_invalid_header_fields = true
-
-vpc_id = "vpc-xxx........."
 
 create_sg = true
 sg_name = "arjstack-alb-sg"
