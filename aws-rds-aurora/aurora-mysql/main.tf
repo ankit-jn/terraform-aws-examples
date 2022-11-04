@@ -1,5 +1,5 @@
 module "aurora" {
-    source = "git::https://github.com/arjstack/terraform-aws-rds-aurora.git"
+    source = "git::https://github.com/arjstack/terraform-aws-rds-aurora.git?ref=v1.0.0"
     
     engine          = var.engine
     engine_version  = var.engine_version
