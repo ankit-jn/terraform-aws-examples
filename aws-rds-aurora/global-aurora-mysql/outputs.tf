@@ -2,36 +2,56 @@ output "global_cluster_arn" {
     value = module.aurora.global_cluster_arn
 }
 
-output "cluster_arn" {
+output "primary_cluster_arn" {
     value = module.aurora.cluster_arn
 }
 
-output "cluster_endpoint" {
+output "secondary_cluster_arn" {
+    value = module.aurora_secondary.cluster_arn
+}
+
+output "primary_cluster_endpoint" {
     value = module.aurora.cluster_endpoint
 }
 
-output "cluster_reader_endpoint" {
+output "secondary_cluster_endpoint" {
+    value = module.aurora_secondary.cluster_endpoint
+}
+
+output "primary_cluster_reader_endpoint" {
     value = module.aurora.cluster_reader_endpoint
+}
+
+output "secondary_cluster_reader_endpoint" {
+    value = module.aurora_secondary.cluster_reader_endpoint
 }
 
 output "port" {
     value = module.aurora.port
 }
 
-output "db_subnet_group" {
+output "primary_db_subnet_group" {
     value = module.aurora.db_subnet_group
 }
 
-output "instances" {
+output "secondary_db_subnet_group" {
+    value = module.aurora_secondary.db_subnet_group
+}
+
+output "primary_instances" {
     value = module.aurora.instances
 }
 
-output "custom_endpoints" {
-    value = module.aurora.custom_endpoints
+output "secondary_instances" {
+    value = module.aurora_secondary.instances
 }
 
-output "sg_id" {
+output "primary_sg_id" {
     value = module.aurora.sg_id
+}
+
+output "secondary_sg_id" {
+    value = module.aurora_secondary.sg_id
 }
 
 output "rds_monitoring_role" {

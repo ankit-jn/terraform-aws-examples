@@ -30,6 +30,13 @@ provider "aws" {
     region  = "ap-south-1"
 }
 
+provider "aws" {
+    alias = "secondary"
+    profile = "arjstack-secondary"
+    region  = "eu-central-1"
+}
+
+
 # # Configure AWS Provider based on AWS Credential profile if COnfig files are at some specific path
 # provider "aws" {
 #   shared_config_files      = ["<Complete Path of the folder>/.aws/conf"]

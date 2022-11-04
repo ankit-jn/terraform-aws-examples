@@ -1,3 +1,5 @@
+variable "global_cluster_name" {}
+
 ## Engine options Properties
 variable "engine" {}
 variable "engine_version" {}
@@ -7,18 +9,24 @@ variable "cluster_name" {}
 variable "password_length" {}
 
 ## Connectivity Properties
-variable "vpc_id" {}
-variable "create_db_subnet_group" {}
-variable "subnets" {}
+variable "primary_vpc_id" {}
+variable "secondary_vpc_id" {}
+variable "db_subnet_group_name" {}
+variable "primary_cluster_subnets" {}
+variable "secondary_cluster_subnets" {}
 variable "create_sg" {}
 variable "sg_rules" {}
-variable "allowed_sg" {}
+variable "primary_allowed_sg" {}
+variable "secondary_allowed_sg" {}
 
 ## Additional configuration Properties
 variable "database_name" {}
 
 ## Backup Properties
 variable "skip_final_snapshot" {}
+
+## Encryption Properties
+variable "storage_encrypted" {}
 
 ## Log Exports Properties
 variable "enabled_cloudwatch_logs_exports" {}
@@ -44,7 +52,6 @@ variable "create_monitoring_role" {}
 ## DB Instances
 variable "instance_class" {}
 variable "instances" {}
-variable "endpoints" {}
 
 ## SSM Paramteres
 variable "ssm_parameter_prefix" {}

@@ -1,6 +1,6 @@
 # ARJ-Stack: Terraform AWS -> Regional Amazon Aurora Mysql Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/arjstack/terraform-aws-rds-aurora) utilization to create Regional Amazon Aurora MySQL RDS cluster with 3 DB instances
+This Example configuration is a demonstration of [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/arjstack/terraform-aws-rds-aurora) utilization to create Regional Amazon Aurora MySQL RDS cluster with 3 DB instances and custom endpoint
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -13,18 +13,19 @@ This Example configuration is a demonstration of [Module: Terraform AWS Relation
 | 4 | DB Instance | `second` |  |
 | 5 | DB Instance | `third` |  |
 | 6 | DB Subnet Group | `arjstackdb-default` |  |
-| 7 | Database Parameter Group | `rds-db-arjstack-pg` |  |
-| 8 | RDS Cluster Parameter Group | `rds-cluster-arjstack-pg` |  |
+| 7 | Database Parameter Group | `aurora-db-arjstack-pg` |  |
+| 8 | RDS Cluster Parameter Group | `aurora-cluster-arjstack-pg` |  |
 | 9 | Cluster Custom Endpoint | `ep-analysis` |  |
-| 10 | SSM Parameter | `/arjstack/inventory/host` |  |
-| 11 | SSM Parameter | `/arjstack/inventory/dbname` |  |
-| 12 | SSM Parameter | `/arjstack/inventory/password` |  |
-| 13 | SSM Parameter | `/arjstack/inventory/username` |  |
+| 10 | Security Group | `arjstackdb-sg` |  |
+| 11 | Security Group Rule |  | `Self Ingress` |
+| 12 | Security Group Rule |  | `Ingress from Source SG-1xxxxxxx....` |
+| 13 | Security Group Rule |  | `Self Egress` |
 | 14 | IAM Role | `rds-monitoring-role` | For enhanced RDS monitoring |
 | 15 | Policy Attachment |  | `arn:aws:iam::aws:policy/service-role/AmazonRDSEnhancedMonitoringRole` |
-| 16 | Security Group | `arjstackdb-sg` |  |
-| 17 | Security Group Rule |  | `Ingress` |
-| 18 | Security Group Rule |  | `Egress` |
+| 16 | SSM Parameter | `/arjstack/inventory/host` |  |
+| 17 | SSM Parameter | `/arjstack/inventory/dbname` |  |
+| 18 | SSM Parameter | `/arjstack/inventory/password` |  |
+| 19 | SSM Parameter | `/arjstack/inventory/username` |  |
 
 ## Requirements
 
@@ -45,8 +46,8 @@ To run this example you need to execute:
 
 ```bash
 $ terraform init
-$ terraform plan
-$ terraform apply
+$ terraform plan --var-file=dev.tfvars
+$ terraform apply --var-file=dev.tfvars
 ```
 
 Note: Select the correct the AWS provider configurations in `provider.tf` file

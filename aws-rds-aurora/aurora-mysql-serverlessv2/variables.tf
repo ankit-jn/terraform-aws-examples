@@ -1,5 +1,6 @@
 ## Engine options Properties
 variable "engine" {}
+variable "engine_mode" {}
 variable "engine_version" {}
 
 ## Cluster Settings Properties
@@ -8,7 +9,7 @@ variable "password_length" {}
 
 ## Connectivity Properties
 variable "vpc_id" {}
-variable "create_db_subnet_group" {}
+variable "db_subnet_group_name" {}
 variable "subnets" {}
 variable "create_sg" {}
 variable "sg_rules" {}
@@ -20,11 +21,17 @@ variable "database_name" {}
 ## Backup Properties
 variable "skip_final_snapshot" {}
 
+## Encryption Properties
+variable "storage_encrypted" {}
+
 ## Log Exports Properties
 variable "enabled_cloudwatch_logs_exports" {}
 
 ## Maintenance Properties
 variable "preferred_maintenance_window" {}
+
+## Provisioned Engine mode Properties
+variable "serverlessv2_scaling_configuration" {}
 
 # Cluster Parameter Group Configurations
 variable "create_db_cluster_parameter_group" {}
@@ -44,7 +51,6 @@ variable "create_monitoring_role" {}
 ## DB Instances
 variable "instance_class" {}
 variable "instances" {}
-variable "endpoints" {}
 
 ## SSM Paramteres
 variable "ssm_parameter_prefix" {}
