@@ -7,9 +7,9 @@ terraform {
     }
 }
 
-# ###############################################################
-# # Use the provider block as per the suitable scenarios 
-# ###############################################################
+###########################################################################
+# Use the provider block among the following as per the suitable scenarios 
+###########################################################################
 
 # # Configure AWS Provider simply if crdentials are exposed as with following enmviroment variables:
 # # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
@@ -24,7 +24,7 @@ terraform {
 #     region      = "<Region Name>"
 # }
 
-# # Configure AWS Provider based on AWS Credential profile
+# Configure AWS Provider based on AWS Credential profile
 provider "aws" {
     profile = "arjstack-training"
     region  = "ap-south-1"
