@@ -1,15 +1,6 @@
-variable "fargate_capacity_providers" {
-  default = {
-    "FARGATE" = {
-        default_strategy = {
-            base = 1
-            weight = 2
-        }
-    }
-    "FARGATE_SPOT" = {
-        default_strategy = {
-            weight = 1
-        }
-    }
-  }
-}
+variable "cluster_name" {}
+variable "use_fargate" {}
+
+variable "enable_cloudwatch_container_insights" {}
+
+variable "fargate_capacity_providers" {}

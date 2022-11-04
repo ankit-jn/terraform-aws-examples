@@ -2,9 +2,9 @@ module "ecs" {
   source = "git::https://github.com/arjstack/terraform-aws-ecs.git?ref=v1.0.0"
   
   ## ECS CLuster
-  create_cluster = false
-  cluster_name = "arjstack-dev" ## Existing ECS Cluster Name
-  use_fargate = true
+  create_cluster = var.create_cluster
+  cluster_name = var.cluster_name ## Existing ECS Cluster Name
+  use_fargate = var.use_fargate
 
   ## Service Discovery
   vpc_id = var.vpc_id
@@ -12,13 +12,13 @@ module "ecs" {
   dns_name = var.dns_name
 
   ## ECS Service
-  create_service = true
+  create_service = var.create_service
   aws_region = var.aws_region
   
   service_name = var.service_name
   service_scalability = var.service_scalability
-  service_task_cpu = 1024
-  service_task_memory = 2048
+  service_task_cpu = var.service_task_cpu
+  service_task_memory = var.service_task_memory
   
   container_definition = data.template_file.container_def.rendered
 

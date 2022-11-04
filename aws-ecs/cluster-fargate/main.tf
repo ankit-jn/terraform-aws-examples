@@ -1,11 +1,10 @@
 module "ecs" {
   source = "git::https://github.com/arjstack/terraform-aws-ecs.git?ref=v1.0.0"
 
-  ## ECS CLuster
-  cluster_name = "arjstack-dev"
-  use_fargate = true
+  cluster_name = var.cluster_name
+  use_fargate = var.use_fargate
 
-  enable_cloudwatch_container_insights = true
+  enable_cloudwatch_container_insights = var.enable_cloudwatch_container_insights
 
   fargate_capacity_providers = var.fargate_capacity_providers
 }

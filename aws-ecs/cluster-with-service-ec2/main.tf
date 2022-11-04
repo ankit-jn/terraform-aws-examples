@@ -2,10 +2,10 @@ module "ecs" {
   source = "git::https://github.com/arjstack/terraform-aws-ecs.git?ref=v1.0.0"
   
   ## ECS CLuster
-  cluster_name = "arjstack-test"
-  use_fargate = false
+  cluster_name = var.cluster_name
+  use_fargate = var.use_fargate
 
-  enable_cloudwatch_container_insights = true
+  enable_cloudwatch_container_insights = var.enable_cloudwatch_container_insights
 
   autoscaling_capacity_providers = var.autoscaling_capacity_providers
 
@@ -16,7 +16,7 @@ module "ecs" {
   enable_service_discovery = var.enable_service_discovery
 
   ## ECS Service
-  create_service = true
+  create_service = var.create_service
   aws_region = var.aws_region
   
   service_name = var.service_name
