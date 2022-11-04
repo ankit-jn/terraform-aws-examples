@@ -46,8 +46,8 @@ To run this example you need to execute:
 
 ```bash
 $ terraform init
-$ terraform plan
-$ terraform apply
+$ terraform plan --var-file=dev.tfvars
+$ terraform apply --var-file=dev.tfvars
 ```
 
 Note: Select the correct the AWS provider configurations in `provider.tf` file
