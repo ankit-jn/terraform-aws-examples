@@ -1,6 +1,6 @@
 engine = "aurora-mysql"
 engine_mode = "provisioned"
-engine_version = "5.7"
+engine_version = "8.0.mysql_aurora.3.02.1"
 
 cluster_name = "arjstackdb"
 password_length = 16
@@ -53,7 +53,7 @@ serverlessv2_scaling_configuration = {
 create_db_cluster_parameter_group = true
 db_cluster_parameter_group = {
     name = "aurora-cluster-arjstack-pg"
-    family = "aurora-mysql5.7"
+    family = "aurora-mysql8.0"
 }
 db_cluster_parameter_group_parameters = [
     {
@@ -66,7 +66,7 @@ db_cluster_parameter_group_parameters = [
 create_db_parameter_group = true
 db_parameter_group = {
     name = "aurora-db-arjstack-pg"
-    family = "aurora-mysql5.7"
+    family = "aurora-mysql8.0"
 }
 db_parameter_group_parameters = [
     {

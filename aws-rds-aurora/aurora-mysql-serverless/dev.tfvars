@@ -42,6 +42,8 @@ skip_final_snapshot = true
 
 storage_encrypted = true
 
+## this property will silently be ignored because
+## Aurora Serverless currently doesn't support CloudWatch Log Export
 enabled_cloudwatch_logs_exports = ["audit", "error"]
 
 preferred_maintenance_window = "Sun:04:00-Sun:04:30"
