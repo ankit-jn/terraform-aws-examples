@@ -25,9 +25,6 @@ variable "database_name" {}
 ## Backup Properties
 variable "skip_final_snapshot" {}
 
-## Encryption Properties
-variable "storage_encrypted" {}
-
 ## Log Exports Properties
 variable "enabled_cloudwatch_logs_exports" {}
 

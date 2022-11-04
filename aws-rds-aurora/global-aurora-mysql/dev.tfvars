@@ -1,7 +1,7 @@
 global_cluster_name = "arjstackglobaldb"
 
 engine = "aurora-mysql"
-engine_version = "5.7"
+engine_version = "5.7.mysql_aurora.2.10.2"
 
 cluster_name = "arjstackdb"
 password_length = 16
@@ -42,8 +42,6 @@ secondary_allowed_sg = ["sg-3xxxxxxx...."]
 database_name = "inventory"
 
 skip_final_snapshot = true
-
-storage_encrypted = true
 
 enabled_cloudwatch_logs_exports = ["audit", "error"]
 

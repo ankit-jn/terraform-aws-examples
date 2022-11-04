@@ -4,7 +4,6 @@ module "aurora" {
     
     create_global_cluster   = true
     global_cluster_name     = var.global_cluster_name
-    storage_encrypted       = var.storage_encrypted
 
     engine = var.engine
     engine_version = var.engine_version
@@ -71,7 +70,7 @@ module "aurora_secondary" {
     sg_rules                = var.sg_rules
     allowed_sg              = var.secondary_allowed_sg
 
-    database_name = var.database_name
+    database_name = var.database_name 
 
     skip_final_snapshot = var.skip_final_snapshot
 
