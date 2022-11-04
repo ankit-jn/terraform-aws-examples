@@ -9,13 +9,13 @@ terraform {
 
 # AWS Provider configuration for Identity Account
 provider "aws" {
-    profile = "<Profile for Identity account>"
-    region = "<Region to operate for Identity account>"
+    profile = "arjstack-training"
+    region = "ap-south-1"
 }
 
 # AWS Provider configuration for Dev Account
 provider "aws" {
     alias = "dev"
-    profile = "<Profile for Dev account>"
-    region = "<Region to operate for Dev account>"
+    profile = "arjstack-secondary"
+    region = "ap-south-1"
 }
