@@ -9,6 +9,6 @@ variable "aliases" {}
 
 variable "key_administrators" {}
 variable "key_grants_users" {}
-variable "key_symmetric_hmac_users" {}
+variable "key_users" {}
 
 variable "tags" {}

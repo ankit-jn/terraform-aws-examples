@@ -11,6 +11,6 @@ variable "deletion_window_in_days" {}
 
 variable "key_administrators" {}
 variable "key_grants_users" {}
-variable "key_asymmetric_public_encryption_users" {}
+variable "key_users" {}
 
 variable "tags" {}

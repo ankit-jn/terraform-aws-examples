@@ -19,7 +19,7 @@ key_grants_users = [
     "arn:aws:iam::111222333444:root"
 ]
 
-key_asymmetric_public_encryption_users = [
+key_users = [
     "arn:aws:iam::112233445566:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
     "arn:aws:iam::111222333444:root"
 ]

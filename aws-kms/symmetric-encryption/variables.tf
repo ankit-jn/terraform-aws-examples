@@ -12,6 +12,6 @@ variable "enable_key_rotation" {}
 
 variable "key_administrators" {}
 variable "key_grants_users" {}
-variable "key_symmetric_encryption_users" {}
+variable "key_users" {}
 
 variable "tags" {}

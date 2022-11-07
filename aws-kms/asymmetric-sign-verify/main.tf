@@ -12,9 +12,9 @@ module "kms" {
 
     deletion_window_in_days = var.deletion_window_in_days
 
-    key_administrators = var.key_administrators
-    key_grants_users = var.key_grants_users
-    key_asymmetric_sign_verify_users = var.key_asymmetric_sign_verify_users
+    key_administrators  = var.key_administrators
+    key_grants_users    = var.key_grants_users
+    key_users           = var.key_users
 
     tags = var.tags
 }
