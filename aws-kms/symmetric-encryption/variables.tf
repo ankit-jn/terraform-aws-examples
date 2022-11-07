@@ -4,9 +4,9 @@ variable "description" {}
 
 variable "key_spec" {}
 variable "key_usage" {}
-variable "custom_key_store_id" {}
 
 variable "aliases" {}
+variable "multi_region" {}
 
 variable "enable_key_rotation" {}
 

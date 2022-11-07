@@ -1,20 +1,26 @@
 account_id = "112233445566"
 
-description = "KMS key for Symmetric Encryption"
+description = "KMS key for Symmetric - Generate and Verify HMAC"
 
-key_spec = "SYMMETRIC_DEFAULT"
-key_usage = "ENCRYPT_DECRYPT"
+key_spec = "HMAC_512"
+key_usage = "GENERATE_VERIFY_MAC"
 
-aliases = []
+aliases = ["hmac"]
 
-enable_key_rotation = true
+key_administrators =  [
+    "arn:aws:iam::112233445566:user/arjstack-training"
+]
 
-key_administrators = []
-key_grants_users = []
-key_symmetric_encryption_users = []
-key_symmetric_hmac_users = []
-key_asymmetric_public_encryption_users = []
-key_asymmetric_sign_verify_users = []
+key_grants_users = [
+    "arn:aws:iam::112233445566:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+    "arn:aws:iam::112233445566:user/arjstack-training",
+    "arn:aws:iam::111222333444:root"
+]
+
+key_symmetric_hmac_users = [
+    "arn:aws:iam::112233445566:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
+    "arn:aws:iam::111222333444:root"
+]
 
 tags = {
     "CostCenter" = "1234"

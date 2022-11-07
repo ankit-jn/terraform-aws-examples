@@ -8,7 +8,7 @@ This Example configuration is a demonstration of [Module: Terraform AWS key Mana
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
 | 1 | KMS Key |  | Symmetric Key for the use to generate and verify Mac |
-| 2 | Key aliases |  | Alias of the KSM key |
+| 2 | Key alias | `alias/hmac` | Alias of the KSM key |
 
 
 ## Requirements

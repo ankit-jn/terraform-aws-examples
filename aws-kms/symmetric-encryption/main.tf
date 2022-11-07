@@ -9,6 +9,7 @@ module "kms" {
     key_usage = var.key_usage
 
     aliases = var.aliases
+    multi_region = var.multi_region
 
     enable_key_rotation = var.enable_key_rotation
 

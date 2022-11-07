@@ -10,7 +10,7 @@ module "kms" {
 
     aliases = var.aliases
 
-    enable_key_rotation = var.enable_key_rotation
+    deletion_window_in_days = var.deletion_window_in_days
 
     key_administrators = var.key_administrators
     key_grants_users = var.key_grants_users

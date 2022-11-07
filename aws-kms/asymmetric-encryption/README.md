@@ -8,7 +8,8 @@ This Example configuration is a demonstration of [Module: Terraform AWS key Mana
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
 | 1 | KMS Key |  | Asymmetirc Key pair for the use of encription and decryption of public key |
-| 2 | Key aliases |  | Alias of the KSM key |
+| 2 | Key alias | `alias/custom` | Alias of the KSM key |
+| 3 | Key alias | `alias/arj` | Alias of the KSM key |
 
 
 ## Requirements

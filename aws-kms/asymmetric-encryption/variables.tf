@@ -4,11 +4,10 @@ variable "description" {}
 
 variable "key_spec" {}
 variable "key_usage" {}
-variable "custom_key_store_id" {}
 
 variable "aliases" {}
 
-variable "enable_key_rotation" {}
+variable "deletion_window_in_days" {}
 
 variable "key_administrators" {}
 variable "key_grants_users" {}

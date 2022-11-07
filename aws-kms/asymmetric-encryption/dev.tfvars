@@ -1,17 +1,28 @@
 account_id = "112233445566"
 
-description = "KMS key for Symmetric Encryption"
+description = "KMS key pair for Asymmetric Encryption"
 
-key_spec = "SYMMETRIC_DEFAULT"
+key_spec = "RSA_3072"
 key_usage = "ENCRYPT_DECRYPT"
 
-aliases = []
+aliases = ["custom", "arj"]
 
-enable_key_rotation = true
+deletion_window_in_days = 7
 
-key_administrators = []
-key_grants_users = []
-key_asymmetric_public_encryption_users = []
+key_administrators =  [
+    "arn:aws:iam::112233445566:user/arjstack-training"
+]
+
+key_grants_users = [
+    "arn:aws:iam::112233445566:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+    "arn:aws:iam::112233445566:user/arjstack-training",
+    "arn:aws:iam::111222333444:root"
+]
+
+key_asymmetric_public_encryption_users = [
+    "arn:aws:iam::112233445566:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
+    "arn:aws:iam::111222333444:root"
+]
 
 tags = {
     "CostCenter" = "1234"
