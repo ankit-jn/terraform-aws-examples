@@ -1,7 +1,7 @@
 policies = [
     {
         name = "arjstack-force-mfa"
-        policy_file = "arjstack-force-mfa.json"
+        policy_file = "policies/arjstack-force-mfa.json"
         description = "MFA Enforcement"
         path = "/"
         tags = {
@@ -11,7 +11,7 @@ policies = [
     },
     {
         name = "arjstack-mfa-device-self-management"
-        policy_file = "arjstack-mfa-device-self-management.json"
+        policy_file = "policies/arjstack-mfa-device-self-management.json"
         description = "Allows MFA-authenticated IAM users to manage their own MFA device"
         path = "/"
         tags = {
@@ -21,7 +21,7 @@ policies = [
     },
     {
         name = "arjstack-credential-report-management"
-        policy_file = "arjstack-credential-report-management.json"
+        policy_file = "policies/arjstack-credential-report-management.json"
         description = "Generate and retrieve IAM credential reports"
         path = "/"
         tags = {

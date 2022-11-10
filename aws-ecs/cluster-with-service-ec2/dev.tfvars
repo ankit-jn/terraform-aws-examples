@@ -56,7 +56,7 @@ container_configurations = {
 policies = [
     {
         name = "arjstack-ecr-access"
-        policy_file = "arjstack-ecr-access.json"
+        policy_file = "policies/arjstack-ecr-access.json"
         description = "Access to fetch the docker image from ECR"
         path = "/"
         tags = {
@@ -66,7 +66,7 @@ policies = [
     },
     {
         name = "arjstack-s3-access"
-        policy_file = "arjstack-s3-access.json"
+        policy_file = "policies/arjstack-s3-access.json"
         description = "Access to S3 bucket"
         path = "/"
         tags = {

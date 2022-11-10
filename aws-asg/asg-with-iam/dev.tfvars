@@ -26,11 +26,11 @@ instance_profile_path = "/"
 instance_profile_policies = [
     {
         "name" = "arjstack-s3-readonly-access"
-        "policy_file" = "arjstack-s3-readonly-access.json"
+        "policy_file" = "policies/arjstack-s3-readonly-access.json"
     },
     {
         "name" = "arjstack-application-development"
-        "policy_file" = "arjstack-application-development.json"
+        "policy_file" = "policies/arjstack-application-development.json"
     },
     {
         "name"  = "AWSCloudTrail_ReadOnlyAccess"

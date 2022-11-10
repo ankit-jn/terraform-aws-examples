@@ -1,7 +1,7 @@
 policies = [
     {
         name        = "arjstack-ci-cd-service-access"
-        policy_file = "arjstack-ci-cd-service-access.json"
+        policy_file = "policies/arjstack-ci-cd-service-access.json"
         description = "AWS CI/CD Service Access"
         tags = {
             "Name"  = "ci-cd-service-access"
@@ -9,7 +9,7 @@ policies = [
     },
     {
         name        = "arjstack-support-access"
-        policy_file = "arjstack-support-access.json"
+        policy_file = "policies/arjstack-support-access.json"
         description = "AWS Services read Only Access for support"
         tags = {
             "Name"  = "support-access"
@@ -17,7 +17,7 @@ policies = [
     },
     {
         name        = "arjstack-s3-readonly-access"
-        policy_file = "arjstack-s3-readonly-access.json"
+        policy_file = "policies/arjstack-s3-readonly-access.json"
         description = "S3 read Only Access for support"
         tags = {
             "Name"  = "s3-readonly-access"

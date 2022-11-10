@@ -2,7 +2,7 @@ identity_policies = [
     {
         # Replace xxxxxxxxxxxx with actual account ids in 
         name        = "Architects-AssumableRolePolicy"
-        policy_file = "Architects-AssumableRolePolicy.json"
+        policy_file = "policies/Architects-AssumableRolePolicy.json"
         description = "Architects Assume Role Policy"
         tags = {
             "Name"  = "Architects-AssumableRolePolicy"
@@ -11,7 +11,7 @@ identity_policies = [
     {
         # Replace xxxxxxxxxxxx with actual account ids in 
         name        = "Developers-AssumableRolePolicy"
-        policy_file = "Developers-AssumableRolePolicy.json"
+        policy_file = "policies/Developers-AssumableRolePolicy.json"
         description = "Developers Assume Role Policy"
         tags = {
             "Name"  = "Developers-AssumableRolePolicy"
@@ -20,7 +20,7 @@ identity_policies = [
     {
         # Replace xxxxxxxxxxxx with actual account ids in 
         name        = "DevOpsEngineers-AssumableRolePolicy"
-        policy_file = "DevOpsEngineers-AssumableRolePolicy.json"
+        policy_file = "policies/DevOpsEngineers-AssumableRolePolicy.json"
         description = "DevOpsEngineers Assume Role Policy"
         tags = {
             "Name"  = "DevOpsEngineers-AssumableRolePolicy"
@@ -87,7 +87,7 @@ users= [
 dev_policies = [
     {
         name        = "arjstack-dev-application-development"
-        policy_file = "arjstack-dev-application-development.json"
+        policy_file = "policies/arjstack-dev-application-development.json"
         description = "Application Developement Access"
         tags = {
             "Name"  = "application-development"
@@ -95,7 +95,7 @@ dev_policies = [
     },
     {
         name        = "arjstack-dev-ci-cd-service-access"
-        policy_file = "arjstack-dev-ci-cd-service-access.json"
+        policy_file = "policies/arjstack-dev-ci-cd-service-access.json"
         description = "AWS CI/CD Service Access"
         tags = {
             "Name"  = "ci-cd-service-access"
@@ -103,7 +103,7 @@ dev_policies = [
     },
     {
         name        = "arjstack-dev-support-access"
-        policy_file = "arjstack-dev-support-access.json"
+        policy_file = "policies/arjstack-dev-support-access.json"
         description = "AWS Services read Only Access for support"
         tags = {
             "Name"  = "support-access"
@@ -111,7 +111,7 @@ dev_policies = [
     },
     {
         name        = "arjstack-dev-s3-readonly-access"
-        policy_file = "arjstack-dev-s3-readonly-access.json"
+        policy_file = "policies/arjstack-dev-s3-readonly-access.json"
         description = "S3 read Only Access for support"
         tags = {
             "Name"  = "s3-readonly-access"

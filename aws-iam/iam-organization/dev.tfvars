@@ -49,7 +49,7 @@ organization_units = [
 organizations_policies = [
     {
         name = "scp-prevent-external-sharing"
-        policy_file = "scp-prevent-external-sharing.json"
+        policy_file = "org_policies/scp-prevent-external-sharing.json"
         description = "Prevent external sharing"
         type = "SERVICE_CONTROL_POLICY"
         tags = {
