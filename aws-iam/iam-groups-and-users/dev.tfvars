@@ -21,7 +21,7 @@ users = [
     },
     {
         name = "James.Christensen",
-        # pgp_key_file = "james.christensen-pub.asc"
+        # pgp_key_file = "keys/pgp/james.christensen-pub.asc"
         create_login_profile = "yes"
         create_access_key = "yes"
         groups = "Managers,Testers"
@@ -32,7 +32,7 @@ users = [
         create_access_key = "yes"
         force_destroy = "no"
         upload_ssh_key = "yes"
-        ssh_public_key_file = "kate.flamini.pub"
+        ssh_public_key_file = "keys/ssh/kate.flamini.pub"
         groups = "Architects,Managers,Developers"
     },
     {

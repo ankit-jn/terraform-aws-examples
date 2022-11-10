@@ -168,7 +168,7 @@ users =  [
         create_access_key = "yes"
         force_destroy = "no"
         upload_ssh_key = "yes"
-        ssh_public_key_file = "kate.flamini.pub"
+        ssh_public_key_file = "keys/ssh/kate.flamini.pub"
         groups = "Architects,Developers,DevOpsEngineeres"
     },
     {
