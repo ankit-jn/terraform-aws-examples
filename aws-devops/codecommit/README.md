@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS -> AWS DevOps Example -> CodeCommit Repository
+# ARJ-Stack: Terraform AWS -> AWS DevOps Example: CodeCommit Repository
 
 This Example configuration is a demonstration of [Module: Terraform AWS DevOps](https://github.com/arjstack/terraform-aws-devops) utilization to create CodeCommit Repository
 
