@@ -1,8 +1,8 @@
-# ARJ-Stack: Terraform AWS Relational Database Service - Amazon Aurora Examples
+# ARJ-Stack: Terraform AWS AWS Neptune, Graph Database Examples
 
-Set of Example Configurations to create AWS RDS - Amazon Aurora resources
+Set of Example Configurations to create AWS AWS Neptune, Graph Database resources
 
-#### Amazon Neptune Example: Neptune - Graph Database Cluster
+#### Amazon Neptune Example: Neptune, Graph Database Cluster
 
 This Example configuration is used to create the following resources:
 - Neptune cluster
@@ -13,7 +13,7 @@ This Example configuration is used to create the following resources:
 - Custom Endpoint
 - Security Group
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-neptune/neptune-cluster) for the code-base to utilize [Module: Terraform AWS Neptune Service](https://github.com/arjstack/terraform-aws-neptune) in order to create Neptune - Graph Database cluster as stated above.
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-neptune/neptune-cluster) for the code-base to utilize [Module: Terraform AWS Neptune, Graph Database Service](https://github.com/arjstack/terraform-aws-neptune) in order to create Neptune - Graph Database cluster as stated above.
 
 ## Authors
 
