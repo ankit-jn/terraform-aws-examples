@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS AWS Neptune, Graph Database Examples
+# ARJ-Stack: Terraform AWS Neptune, Graph Database Examples
 
 Set of Example Configurations to create AWS AWS Neptune, Graph Database resources
 
