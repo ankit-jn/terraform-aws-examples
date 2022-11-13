@@ -7,19 +7,23 @@ This Example configuration is a demonstration of [Module: Terraform Serverless A
 
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
+| 1 | Serverless MSK | `arjstack-msk-serverless` |  |
+| 2 | Security Group | `arjstack-msk-serverless-sg` |  |
+| 3 | Security Group Rule |  | `Self Ingress` |
+| 4 | Security Group Rule |  | `Self Egress` |
 
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.22.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.27.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.22.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.27.0 |
 
 ## Usages
 
