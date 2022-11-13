@@ -1,5 +1,5 @@
 engine = "neptune"
-engine_version = "1.1.1.0.R6"
+engine_version = "1.1.1.0"
 
 cluster_name = "arjstack-neptune-cluster"
 
@@ -66,7 +66,7 @@ neptune_parameter_group_parameters = [
     }
 ]
 
-instance_class = "db.r4.large"
+instance_class = "db.r5.xlarge"
 instances = [
     {
         name = "first"
