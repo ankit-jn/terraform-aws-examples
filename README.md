@@ -30,9 +30,13 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer) for utilizing [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer)
 
+#### AWS: Amazon Neptune Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-neptune) for utilizing [Module: Terraform AWS Neptune, Grapth Database Service](https://github.com/arjstack/terraform-aws-neptune)
+
 #### AWS: Amazon Aurora Examples
 
-Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-rds-aurora) for utilizing [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-rds-aurora)
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-rds-aurora) for utilizing [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/arjstack/terraform-aws-rds-aurora)
 
 #### AWS: Simple Storage Service (S3) Examples
 
