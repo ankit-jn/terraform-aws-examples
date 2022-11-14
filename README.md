@@ -18,6 +18,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-ecs) for utilizing [Module: Terraform AWS Elastic Container Service (ECS)](https://github.com/arjstack/terraform-aws-ecs)
 
+#### AWS: Elastic File System (EFS) Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-efs) for utilizing [Module: Terraform AWS Elastic File System (EFS)](https://github.com/arjstack/terraform-aws-efs)
+
 #### AWS: IAM Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-iam) for utilizing [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-iam)
