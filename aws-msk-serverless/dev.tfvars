@@ -35,7 +35,7 @@ vpc_configs = [
         additional_sg = ["sg-1xxxxx......", "sg-2xxx........."]
     },
     {
-        vpc_id = "vpc-zzzzzzz......"
+        vpc_id = "vpc-zzzzzzzzzzz"
         subnets = ["subnet-1zzz........", "subnet-2zzzz......."]
 
         create_sg = true

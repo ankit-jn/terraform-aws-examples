@@ -8,9 +8,13 @@ This Example configuration is a demonstration of [Module: Terraform Serverless A
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
 | 1 | Serverless MSK | `arjstack-msk-serverless` |  |
-| 2 | Security Group | `arjstack-msk-serverless-sg` |  |
-| 3 | Security Group Rule |  | `Self Ingress` |
-| 4 | Security Group Rule |  | `Self Egress` |
+| 2 | IAM Policy | `arjstack-msk-serverless-policy` |  |
+| 3 | Security Group | `arjstack-msk-serverless-sg` |  |
+| 4 | Security Group Rule |  | `Self Ingress` for security group `arjstack-msk-serverless-sg` |
+| 5 | Security Group Rule |  | `Self Egress` for security group `arjstack-msk-serverless-sg` |
+| 6 | Security Group | `arjstack-msk-serverless-vpc-zzzzzzzzzzz-sg` |  |
+| 7 | Security Group Rule |  | `Self Ingress` for security group `arjstack-msk-serverless-vpc-zzzzzzzzzzz-sg` |
+| 8 | Security Group Rule |  | `Self Egress` for security group `arjstack-msk-serverless-vpc-zzzzzzzzzzz-sg` |
 
 ## Requirements
 
