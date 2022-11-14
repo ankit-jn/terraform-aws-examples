@@ -3,9 +3,9 @@ output "arn" {
     value       = module.msk_serverless.arn
 }
 
-output "sg_id" {
+output "security_groups" {
     description = "The Security Group ID associated to MSK"
-    value       = module.msk_serverless.sg_id
+    value       = module.msk_serverless.security_groups
 }
 
 output "policy_arn" {
