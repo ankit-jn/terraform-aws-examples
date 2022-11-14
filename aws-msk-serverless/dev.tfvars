@@ -1,36 +1,75 @@
 cluster_name = "arjstack-msk-serverless"
 
-vpc_id = "vpc-xxxxxxxxxxx"
-subnets = ["subnet-1xxxxx.......", "subnet-2xxxxxxxxx"]
+vpc_configs = [
+    {
+        vpc_id = "vpc-xxxxxxxxxxxxxx"
+        subnets = ["subnet-1xxxxxx.......", "subnet-2xxxxx........"]
 
-create_sg = true
-sg_name = "arjstack-msk-serverless-sg"
-sg_rules = {
-    "ingress" = [
-                  {
-                    rule_name = "Self Ingress Rule"
-                    description = "Self Ingress Rule"
-                    from_port = 0
-                    to_port = 0
-                    protocol = "-1"
+        create_sg = true
+        sg_name = "arjstack-msk-serverless-sg"
+        sg_rules = {
+            "ingress" = [
+                          {
+                            rule_name = "Self Ingress Rule"
+                            description = "Self Ingress Rule"
+                            from_port = 0
+                            to_port = 0
+                            protocol = "-1"
 
-                    self = true
-                  }
-                ],
-    "egress" = [
-                  {
-                    rule_name = "Self Egress Rule"
-                    description = "Self Egress Rule"
-                    from_port = 0
-                    to_port = 0
-                    protocol = "-1"
+                            self = true
+                          }
+                        ],
+            "egress" = [
+                          {
+                            rule_name = "Self Egress Rule"
+                            description = "Self Egress Rule"
+                            from_port = 0
+                            to_port = 0
+                            protocol = "-1"
 
-                    self = true
-                  },
-               ]
-}
+                            self = true
+                          },
+                      ]
+        }
 
-additional_sg = ["sg-1xxxxxxxxxxx", "sg-2xxxxxxxxxxx"]
+        additional_sg = ["sg-1xxxxx......", "sg-2xxx........."]
+    },
+    {
+        vpc_id = "vpc-zzzzzzz......"
+        subnets = ["subnet-1zzz........", "subnet-2zzzz......."]
+
+        create_sg = true
+        # sg_name = "arjstack-msk-serverless-sg"
+        sg_rules = {
+            "ingress" = [
+                          {
+                            rule_name = "Self Ingress Rule"
+                            description = "Self Ingress Rule"
+                            from_port = 0
+                            to_port = 0
+                            protocol = "-1"
+
+                            self = true
+                          }
+                        ],
+            "egress" = [
+                          {
+                            rule_name = "Self Egress Rule"
+                            description = "Self Egress Rule"
+                            from_port = 0
+                            to_port = 0
+                            protocol = "-1"
+
+                            self = true
+                          },
+                      ]
+        }
+
+        additional_sg = ["sg-3zzzzz.........."]
+    }
+]
+
+configure_iam_policy = true
 
 tags = {
     "CostCenter" = 1234

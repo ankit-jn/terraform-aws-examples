@@ -1,16 +1,9 @@
 module "msk_serverless" {
-    source = "git::https://github.com/arjstack/terraform-aws-msk-serverless.git?ref=v1.0.0"
-
+    # source = "git::https://github.com/arjstack/terraform-aws-msk-serverless.git?ref=v1.0.0"
+    source = "../../terraform-aws-msk-serverless"
     cluster_name = var.cluster_name
 
-    vpc_id = var.vpc_id
-    subnets = var.subnets
-
-    create_sg = var.create_sg
-    sg_name = var.sg_name
-    sg_rules = var.sg_rules
-
-    additional_sg = var.additional_sg
-
+    vpc_configs = var.vpc_configs
+    configure_iam_policy = var.configure_iam_policy
     tags = var.tags
 }
