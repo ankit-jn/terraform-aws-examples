@@ -1,6 +1,6 @@
 module "efs" {
-    # source = "git::https://github.com/arjstack/terraform-aws-efs.git"
-    source = "../../../terraform-aws-efs"
+    source = "git::https://github.com/arjstack/terraform-aws-efs.git?ref=v1.0.0"
+    
     name = var.name
 
     performance_mode = var.performance_mode

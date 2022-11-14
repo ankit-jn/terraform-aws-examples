@@ -1,6 +1,6 @@
-# ARJ-Stack: Terraform AWS -> ECS Example: ECS Cluster with AWS Fargate
+# ARJ-Stack: Terraform AWS -> EFS Example: Standard File System
 
-This Example configuration is a demonstration of [Module: Terraform AWS ECS](https://github.com/arjstack/terraform-aws-ecs) utilization to manage AWS Fargate ECS Cluster.
+This Example configuration is a demonstration of [Module: Terraform AWS ECS](https://github.com/arjstack/terraform-aws-ecs) utilization to provision Standard Elastic File System.
 
 
 #### Resources to be provisioned as an outcome of this example
@@ -8,8 +8,17 @@ This Example configuration is a demonstration of [Module: Terraform AWS ECS](htt
 
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
-| 1 | ECS Cluster | `arjstack-dev` | AWS Fargate based cluster with container insights enabled |
-| 2 | Capacity Providers | `FARGATE` & `FARGATE_SPOT` | The Fargate capacity providers are attached with cluster |
+| 1 | Elastic File System | `arjstack-one-zone-efs` | One Zone (`ap-south-1`) EFS  |
+| 2 | EFS: File System Policy |  |  |
+| 3 | EFS: Backup Policy |  |  |
+| 4 | EFS: Mount Target |  | NFSv4 endpoint in Subnet `subnet-1xxxxxxxxxxx` |
+| 4 | EFS: Mount Target |  | NFSv4 endpoint in Subnet `subnet-2xxxxxxxxxxx` |
+| 5 | Security Group | `efs-arjstack-one-zone-efs-sg` | Security Group to be attached with Mount Targets |
+| 6 | Security Group Ingress Rule |  | Self Egress Rule |
+| 7 | Security Group Ingress Rule |  | Ingress from Source SG `sg-1xxxxxxxxxx` |
+| 8 | Security Group Egress Rule |  | Self Egress Rule |
+| 9 | KMS Key |  | KMS Key for EFS [arjstack-one-zone-efs] - Disk encryption |
+| 10 | KMS Key Alias | `alias/arjstack-one-zone-efs-key` |  |
 
 ## Requirements
 
