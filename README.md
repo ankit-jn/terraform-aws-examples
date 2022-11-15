@@ -50,6 +50,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-security-groups) for utilizing [Module: Terraform AWS Security Groups](https://github.com/arjstack/terraform-aws-security-groups)
 
+#### AWS: VPC Peering Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc-peering) for utilizing [Module: Terraform AWS VPC Peering](https://github.com/arjstack/terraform-aws-vpc-peering)
+
 #### AWS: VPC Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc) for utilizing [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc)
