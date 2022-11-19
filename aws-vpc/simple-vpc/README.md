@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS -> VPC Example: Simple VPC
+## ARJ-Stack: Terraform AWS -> VPC Example: Simple VPC
 
 This Example Configuration is a demonstration of [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) utilization to create a Simple AWS VPC with 1 public subnet having its own dedicated NACL and deciated Route Table.
 
@@ -20,20 +20,20 @@ This Example Configuration is a demonstration of [Module: Terraform AWS VPC](htt
 | 11 | Network ACL Rule |  | Outbound Rule is created in NACL `simple-vpc-nacl-public` |
 | 12 | RT-Subnet Association | `rtbassoc-xxxxxxxx` | Association of Public Route Table (`simple-vpc-rt-public`) with Public Subnet (`public-subnet`) |
 
-## Requirements
+### Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.5 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.22.0 |
 
-## Providers
+### Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.22.0 |
 
-## Usages
+### Usages
 
 To run this example you need to execute:
 
@@ -45,6 +45,6 @@ $ terraform apply --var-file=dev.tfvars
 
 Note: Select the correct the AWS provider configurations in `provider.tf` file
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

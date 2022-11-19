@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS DevOps Examples
+## ARJ-Stack: Terraform AWS DevOps Examples
 
 Set of Example Configurations to utilize AWS DevOps Services
 
@@ -20,6 +20,6 @@ This Example configuration is used to provision AWS DevOps Servcies (CodeBuild a
 
 Refer [GitHub Repository](https://github.com/arjstack/aws-devops-java-microservice) for the code-base to utilize [Module: Terraform AWS DevOps](https://github.com/arjstack/terraform-aws-devops) in order to configure Pipeline.
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

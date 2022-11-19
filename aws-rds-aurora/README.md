@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS Relational Database Service - Amazon Aurora Examples
+## ARJ-Stack: Terraform AWS Relational Database Service - Amazon Aurora Examples
 
 Set of Example Configurations to create AWS RDS - Amazon Aurora resources
 
@@ -55,6 +55,6 @@ This Example configuration is used to create the following resources:
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-rds-aurora/global-aurora-mysql) for the code-base to utilize [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/arjstack/terraform-aws-rds-aurora) in order to create Global Aurora MySQL cluster as stated above.
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

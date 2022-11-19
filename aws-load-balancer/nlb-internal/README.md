@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS -> Load Balancer Example: Internal Network Load Balancer
+## ARJ-Stack: Terraform AWS -> Load Balancer Example: Internal Network Load Balancer
 
 This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) utilization to create Internal Network Load Balancer
 
@@ -9,20 +9,20 @@ This Example configuration is a demonstration of [Module: Terraform AWS Load Bal
 |:------|:------|:------|:------|
 | 1 | Network Load Balancer | `arjstack-nlb` |  |
 
-## Requirements
+### Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.5 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.22.0 |
 
-## Providers
+### Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.22.0 |
 
-## Usages
+### Usages
 
 To run this example you need to execute:
 
@@ -34,6 +34,6 @@ $ terraform apply --var-file=dev.tfvars
 
 Note: Select the correct the AWS provider configurations in `provider.tf` file
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

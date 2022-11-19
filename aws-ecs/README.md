@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS Elastic Container Service Examples
+## ARJ-Stack: Terraform AWS Elastic Container Service Examples
 
 Set of Example Configurations to create Elastic Container Service resources [ECS Cluster (EC2 based and Fargate based), ECS Service, Service Discovery etc.] in AWS
 
@@ -32,6 +32,6 @@ This Example configuration is used to create AWS ECS Cluster with EC2 insatnces 
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-ecs/cluster-with-service-ec2) for the code-base to utilize [Module: Terraform AWS ECS](https://github.com/arjstack/terraform-aws-ecs) in order to create AWS ECS Cluster with EC2 insatnces managed via ASG and ECS Service.
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

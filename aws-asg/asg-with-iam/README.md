@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS -> ASG with Launch Temaplate
+## ARJ-Stack: Terraform AWS -> ASG with Launch Temaplate
 
 This Example configuration is a demonstration of [Module: Terraform AWS Auto Scaling Group](https://github.com/arjstack/terraform-aws-iam) utilization to create ASG with Launch Template as well as IAM Roles and IAM Policies. 
 
@@ -27,20 +27,20 @@ This Example configuration is a demonstration of [Module: Terraform AWS Auto Sca
 | 1 | Auto Scaling Group | `arjstack-asg` |  |
 | 2 | Launch Template | `arjstack-asg-template` |  |
 
-## Requirements
+### Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.5 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.22.0 |
 
-## Providers
+### Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.22.0 |
 
-## Usages
+### Usages
 
 To run this example you need to execute:
 
@@ -52,6 +52,6 @@ $ terraform apply --var-file=dev.tfvars
 
 Note: Select the correct the AWS provider configurations in `provider.tf` file
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

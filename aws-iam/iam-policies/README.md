@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS - IAM: Policy Management Example
+## ARJ-Stack: Terraform AWS - IAM: Policy Management Example
 
 This Example configuration is a demonstration of [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-iam) utilization to manage IAM policies.
 
@@ -15,20 +15,20 @@ This Example configuration is a demonstration of [Module: Terraform AWS IAM](htt
 | 2 | IAM Policy | `arjstack-force-mfa` | Policy File: `arjstack-force-mfa.json` |
 | 3 | IAM Policy | `arjstack-mfa-device-self-management` | Policy File: `arjstack-mfa-device-self-management.json` |
 
-## Requirements
+### Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.5 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.22.0 |
 
-## Providers
+### Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.22.0 |
 
-## Usages
+### Usages
 
 To run this example you need to execute:
 
@@ -40,6 +40,6 @@ $ terraform apply --var-file=dev.tfvars
 
 Note: Select the correct the AWS provider configurations in `provider.tf` file
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

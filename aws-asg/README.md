@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS Auto Scaling Examples
+## ARJ-Stack: Terraform AWS Auto Scaling Examples
 
 Set of Example Configurations to create AWS Auto Scaling Group resources
 
@@ -44,6 +44,6 @@ Resources to be Provisioned:
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-asg/asg-mix-instances-policy) for the code-base to utilize [Module: Terraform AWS Auto Scaling Group](https://github.com/arjstack/terraform-aws-asg) in order to Create ASG with Launch Template, Instance profile and new IAM resources having strategy of targeting multiple Instances.
 
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

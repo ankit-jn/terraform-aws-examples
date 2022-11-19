@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS Load Balancer Examples
+## ARJ-Stack: Terraform AWS Load Balancer Examples
 
 Set of Example Configurations to create AWS Load Balancer resources
 
@@ -44,6 +44,6 @@ This Example configuration is used to create Gateway Load Balancer
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer/gateway-lb) for the code-base to utilize [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) in order to create Gateway Load Balancer
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

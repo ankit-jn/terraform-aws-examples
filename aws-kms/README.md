@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS Key Management Service Keys Examples
+## ARJ-Stack: Terraform AWS Key Management Service Keys Examples
 
 Set of Example Configurations to create AWS KMS keys
 
@@ -26,6 +26,6 @@ This Example configuration is used to create Asymmetric KMS key pair for the use
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-kms/asymmetric-sign-verify) for the code-base to utilize [Module: Terraform AWS KMS](https://github.com/arjstack/terraform-aws-kms) in order to manage KMS key as stated above.
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

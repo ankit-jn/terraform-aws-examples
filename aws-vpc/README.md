@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS VPC Examples
+## ARJ-Stack: Terraform AWS VPC Examples
 
 Set of Example Configurations to create AWS VPC
 
@@ -67,6 +67,6 @@ This Example configuration is used to create AWS VPC having multiple NAT Gateway
 
 Refer [Configuration Exampl](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc/multiple-nat-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) in order to create VPC as stated above.
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

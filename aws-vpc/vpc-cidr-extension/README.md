@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS -> VPC Example: VPC with additional CIDR
+## ARJ-Stack: Terraform AWS -> VPC Example: VPC with additional CIDR
  
 This Example Configuration is a demonstration of [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) utilization to create AWS VPC with 2 subnets from its primary CIDR having its own dedicated NACL and deciated route table along with additional seconday CIDR which is utilized to create 2 more Infra subnets.
 
@@ -33,20 +33,20 @@ This Example Configuration is a demonstration of [Module: Terraform AWS VPC](htt
 | 24 | RT-Subnet Association | `rtbassoc-xxxxxxxx` | Association of Public Route Table `vpc-cidr-extension-rt-infra` with Public Subnet `infra-subnet-2` |
 
 
-## Requirements
+### Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.5 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.22.0 |
 
-## Providers
+### Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.22.0 |
 
-## Usages
+### Usages
 
 To run this example you need to execute:
 
@@ -58,6 +58,6 @@ $ terraform apply --var-file=dev.tfvars
 
 Note: Select the correct the AWS provider configurations in `provider.tf` file
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS -> Load Balancer Example: Internet Facing Application Load Balancer
+## ARJ-Stack: Terraform AWS -> Load Balancer Example: Internet Facing Application Load Balancer
 
 This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) utilization to create Application Load Balancer along with Security Group and its Ingress/Egress Rules
 
@@ -13,20 +13,20 @@ This Example configuration is a demonstration of [Module: Terraform AWS Load Bal
 | 4 | Security Group Rule |  | Ingress Rule to allow traffic on port 80 from 0.0.0.0/0 |
 | 5 | Security Group Rule |  | Self Egress Rule |
 
-## Requirements
+### Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.5 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.22.0 |
 
-## Providers
+### Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.22.0 |
 
-## Usages
+### Usages
 
 To run this example you need to execute:
 
@@ -38,6 +38,6 @@ $ terraform apply --var-file=dev.tfvars
 
 Note: Select the correct the AWS provider configurations in `provider.tf` file
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).

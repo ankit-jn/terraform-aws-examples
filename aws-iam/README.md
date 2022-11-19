@@ -1,4 +1,4 @@
-# ARJ-Stack: Terraform AWS IAM Examples
+## ARJ-Stack: Terraform AWS IAM Examples
 
 Set of Example Configurations to create AWS IAM resources
 
@@ -46,6 +46,6 @@ This Example configuration is used to create AWS organization.
 
 Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-iam/iam-organization) for the code-base to utilize [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-iam) in order to create AWS organization.
 
-## Authors
+### Authors
 
 Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
