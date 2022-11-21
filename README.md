@@ -2,6 +2,10 @@
 
 This repository is bundled with examples for provisioning resources in AWS using Terraform modules
 
+#### AWS: Certificate Manager (ACM) Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-acm) for utilizing [Module: Terraform AWS Certificate Manager (ACM)](https://github.com/arjstack/terraform-aws-acm)
+
 #### AWS: Autoscaling Groups (ASG) Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-asg) for utilizing [Module: Terraform AWS Autoscaling Groups (ASG)](https://github.com/arjstack/terraform-aws-asg)
