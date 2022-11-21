@@ -10,6 +10,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-asg) for utilizing [Module: Terraform AWS Autoscaling Groups (ASG)](https://github.com/arjstack/terraform-aws-asg)
 
+#### AWS: Clodfront Distribution Network (CDN) Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-cdn) for utilizing [Module: Terraform AWS Clodfront Distribution Network (CDN)](https://github.com/arjstack/terraform-aws-cdn)
+
 #### AWS: DevOps Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-devops) for utilizing [Module: Terraform DevOps Services](https://github.com/arjstack/terraform-aws-devops)
