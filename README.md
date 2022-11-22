@@ -58,6 +58,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-security-groups) for utilizing [Module: Terraform AWS Security Groups](https://github.com/arjstack/terraform-aws-security-groups)
 
+#### AWS: Amazon Timestream Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-timestream) for utilizing [Module: Terraform AWS - Amazon Timestream](https://github.com/arjstack/terraform-aws-timestream)
+
 #### AWS: VPC Peering Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc-peering) for utilizing [Module: Terraform AWS VPC Peering](https://github.com/arjstack/terraform-aws-vpc-peering)
