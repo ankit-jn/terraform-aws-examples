@@ -10,7 +10,7 @@ This Example configuration is a demonstration of [Module: Terraform AWS - Amazon
 | 1 | Timestream Database | `arjstack-timestream` |  |
 | 2 | Timestream Table | `inventory` | Database - `arjstack-timestream` |
 | 3 | Timestream Table | `invoice` | Database - `arjstack-timestream` |
-| 4 | Customer Managed KMS Key |  | TO encrypt the data stored in database. |
+| 4 | Customer Managed KMS Key |  | To encrypt the data stored in database. |
 | 5 | KMS Key alias | `alias/arjstack-timestream-key` |  |
 
 ### Requirements
