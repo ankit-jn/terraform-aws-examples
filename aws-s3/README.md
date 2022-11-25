@@ -18,13 +18,19 @@ Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples
 
 This Example configuration is used to create S3 bucket with versioning and SSE-S3 based encryption enabled.
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-s3/s3-encrypted) for the code-base to utilize [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/arjstack/terraform-aws-s3) in order to manage S3 bucket as stated above
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-s3/s3-encrypted) for the code-base to utilize [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/arjstack/terraform-aws-s3) in order to manage S3 bucket as stated above.
 
 #### Amazon S3 Example: S3 Bucket (Encrypted with SSE-kms)
 
 This Example configuration is used to create S3 bucket with versioning and SSE-kms based encryption enabled (hence a new KMS key is also provisioned)
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-s3/s3-encrypted-kms) for the code-base to utilize [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/arjstack/terraform-aws-s3) in order to manage S3 bucket as stated above
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-s3/s3-encrypted-kms) for the code-base to utilize [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/arjstack/terraform-aws-s3) in order to manage S3 bucket as stated above.
+
+#### Amazon S3 Example: S3 Bucket and Bucket Policy
+
+This Example configuration is used to create S3 bucket along with Bucket policy (thorugh policy file as well as policy contents).
+
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-s3/s3-bucket-policy) for the code-base to utilize [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/arjstack/terraform-aws-s3) in order to manage S3 bucket policy as stated above.
 
 ### Authors
 
