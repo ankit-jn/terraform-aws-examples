@@ -1,4 +1,4 @@
-## ARJ-Stack: Terraform AWS -> Cloudfront Distribution Network (CDN) Example: CDN with Custom origin
+## ARJ-Stack: Terraform AWS -> Cloudfront Distribution Network (CDN) Example
 
 This Example configuration is a demonstration of [Module: Terraform AWS Cloudfront Distribution Network (CDN)](https://github.com/arjstack/terraform-aws-cdn) utilization to manage CDN.
 
