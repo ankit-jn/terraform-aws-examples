@@ -8,6 +8,19 @@ This Example configuration is a demonstration of [Module: Terraform AWS Cloudfro
 
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
+| 1 | CloudFront Distribution |  |  |
+| 2 | CloudFront Function | `ARJStack-CloudFront-Viewer-Request-Function` | Event: `viewer-request` |
+| 3 | Origin Access Identity |  |  |
+| 4 | Cache Policy | `arjstack-cache` |  |
+| 5 | Origin Request Policy | `arjstack-origin-request` |  |
+| 6 | Response Headers Policy | `arjstack-resonse-headers` |  |
+| 7 | Public Keys | `arjstack-cdn-training-key` |  |
+| 8 | Public Keys | `arjstack-cdn-testing-key` |  |
+| 9 | Key Group | `arjstack-cdn-key-group` |  |
+| 10 | Field Level Encryption Profile | `arjstack-cdn-encryption` |  |
+| 11 | S3 Bucket | `arjstack-docs` |  |
+| 12 | S3 Bucket Policy |  |  |
+
 
 ### Requirements
 

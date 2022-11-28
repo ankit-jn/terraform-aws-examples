@@ -1,6 +1,6 @@
 bucket_name = "arjstack-docs"
 price_class = "PriceClass_200"
-default_root_object = "/#/home"
+default_root_object = "/"
 error_responses = [
     {
         error_code            = 404
@@ -17,6 +17,7 @@ geo_restriction = {
 origins = [
     {
         origin_id = "documents-origin"
+        is_s3_origin = true
         domain_name = "arjstack-docs.s3.ap-south-1.amazonaws.com"
 
         custom_headers = {
@@ -57,7 +58,7 @@ default_cache_behavior = {
     min_ttl         = 0
     max_ttl         = 0
 
-    encryption_profile_name = "arjstack-cdn-encryption"
+    # encryption_profile_name = "arjstack-cdn-encryption"
 
     origin_request_policy_name = "arjstack-origin-request"
     cache_policy_name = "arjstack-cache"
@@ -71,15 +72,20 @@ default_cache_behavior = {
 ordered_cache_behaviors = [ 
     {
         target_origin_id = "documents-origin"
+        path_pattern = "/s3.html"
         viewer_protocol_policy = "https-only"
         allowed_methods  = ["GET", "HEAD", "OPTIONS"]
         cached_methods   = ["GET", "HEAD"]
+
+        default_ttl     = 0
+        min_ttl         = 0
+        max_ttl         = 0
 
         compress     = true
         origin_request_policy_name = "arjstack-origin-request"
         cache_policy_name = "arjstack-cache"
         response_headers_policy_name = "arjstack-resonse-headers"
-    }
+    },
 ]
 
 cache_policies = [
@@ -87,8 +93,8 @@ cache_policies = [
         name = "arjstack-cache"
         
         default_ttl     = 1800
-        min_ttl         = 864000
-        max_ttl         = 300
+        min_ttl         = 300
+        max_ttl         = 864000
 
         cookie_behavior = "all"
         header_behavior = "whitelist"
@@ -142,11 +148,11 @@ create_origin_access_identity = true
 public_keys = [
     {
         name = "arjstack-cdn-training-key"
-        key_file = "key.pub"
+        key_file = "key.pem"
     },
     {
         name = "arjstack-cdn-testing-key"
-        key_file = "key.pub"
+        key_file = "key.pem"
     }
 ]
 
@@ -165,6 +171,14 @@ encryption_profiles = [
         field_patterns = ["Name", "DateOfBirth"]
     }
 ]
+
+cloudfront_functions = {
+    "viewer-request" = {
+        name = "ARJStack-CloudFront-Viewer-Request-Function"
+        runtime = "cloudfront-js-1.0"
+        code_file = "viewer_request_function.js"
+    }
+}
 
 default_tags = {
     "CostCenter" = "1234"

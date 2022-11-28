@@ -1,6 +1,5 @@
 module "cloudfront" {
-    # source = "git::https://github.com/arjstack/terraform-aws-cdn.git?ref=v1.0.0"
-    source = "../../terraform-aws-cdn"
+    source = "git::https://github.com/arjstack/terraform-aws-cdn.git?ref=v1.0.0"
     
     price_class = var.price_class
     default_root_object = var.default_root_object
@@ -22,6 +21,8 @@ module "cloudfront" {
     key_groups          = var.key_groups
     encryption_profiles = var.encryption_profiles
     
+    cloudfront_functions = var.cloudfront_functions
+    
     tags = merge(var.default_tags, var.cdn_tags)
 
     depends_on = [
@@ -40,7 +41,8 @@ module "s3_bucket_policy" {
     source = "git::https://github.com/arjstack/terraform-aws-s3?ref=v1.0.0"
     
     name = var.bucket_name
-    
+    create = false
+    attach_bucket_policy = true
     policy_content = data.aws_iam_policy_document.this.json
 
     depends_on = [
@@ -48,8 +50,6 @@ module "s3_bucket_policy" {
         data.aws_iam_policy_document.this
     ]
 }
-
-data aws_caller_identity "this" {}
 
 data aws_iam_policy_document "this" {
     statement {
@@ -60,8 +60,8 @@ data aws_iam_policy_document "this" {
         ]
 
         resources = [
-            "arn:aws:s3:ap-south-1:${data.aws_caller_identity.this.arn}:${var.bucket_name}",
-            "arn:aws:s3:ap-south-1:${data.aws_caller_identity.this.arn}:${var.bucket_name}/*"
+            "arn:aws:s3:::${var.bucket_name}",
+            "arn:aws:s3:::${var.bucket_name}/*"
         ]
 
         principals {
