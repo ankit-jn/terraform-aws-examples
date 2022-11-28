@@ -38,6 +38,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-kms) for utilizing [Module: Terraform AWS Key Management Service (KMS)](https://github.com/arjstack/terraform-aws-kms)
 
+#### AWS: Lambda Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-lambda) for utilizing [Module: Terraform AWS Lambda](https://github.com/arjstack/terraform-aws-lambda)
+
 #### AWS: Load Balancer Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-load-balancer) for utilizing [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer)
