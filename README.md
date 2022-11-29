@@ -38,6 +38,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-iam) for utilizing [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-iam)
 
+#### AWS: Amazon Keyspaces Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-keyspaces) for utilizing [Module: Terraform AWS Keyspaces (For Apache Cassandra)](https://github.com/arjstack/terraform-aws-keyspaces)
+
 #### AWS: Key Management Service (KMS) Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-kms) for utilizing [Module: Terraform AWS Key Management Service (KMS)](https://github.com/arjstack/terraform-aws-kms)
