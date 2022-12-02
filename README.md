@@ -20,7 +20,7 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 #### AWS: DynamoDB Examples
 
-Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-dynamodb) for utilizing [Module: Terraform DynamoDB Tables](https://github.com/arjstack/terraform-aws-dynamodb)
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-dynamodb) for utilizing [Module: Terraform DynamoDB](https://github.com/arjstack/terraform-aws-dynamodb)
 
 #### AWS: Elastic Container Registry (ECR) Examples
 
