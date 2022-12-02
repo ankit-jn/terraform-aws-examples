@@ -8,7 +8,15 @@ This Example configuration is a demonstration of [Module: Terraform AWS - Dynamo
 | Sr. No. | Resource Type | Resource Name | Additional Details |
 |:------|:------|:------|:------|
 | 1 | DynamoDB Table | `arjstack-inventory` |  |
-| 2 | Contributor Insights | For the table `arjstack-inventory` |  |
+| 2 | Contributor Insights |  | For the table `arjstack-inventory` |
+| 3 | Scaling Target for Read Capacity |  | Target- `table/arjstack-inventory`  |
+| 4 | Target Tracking Scaling Policy | `DynamoDBReadCapacityUtilization:table/arjstack-inventory` | For table (`arjstack-inventory`) - Read Capacity  |
+| 5 | Scaling Target for Write Capacity |  | Target- `table/arjstack-inventory`  |
+| 6 | Target Tracking Scaling Policy | `DynamoDBWriteCapacityUtilization:table/arjstack-inventory` | For table (`arjstack-inventory`) - Write Capacity  |
+| 7 | Scaling Target for Read Capacity |  | Target- `table/arjstack-inventory/index/GSI-1`  |
+| 8 | Target Tracking Scaling Policy | `DynamoDBReadCapacityUtilization:table/arjstack-inventory/index/GSI-1` | For GSI Index (`GS-1`) - Read Capacity  |
+| 9 | Scaling Target for Write Capacity |  | Target- `table/arjstack-inventory/index/GSI-1`  |
+| 10 | Target Tracking Scaling Policy | `DynamoDBWriteCapacityUtilization:table/arjstack-inventory/index/GSI-1` | For GSI Index (`GS-1`) - Write Capacity  |
 
 ### Requirements
 
