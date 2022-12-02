@@ -25,3 +25,8 @@ variable "local_secondary_indexes" {}
 variable "global_secondary_indexes" {}
 
 variable "provision_contributor_insights" {}
+
+variable "enable_autoscaling" {}
+variable "read_capacity_autoscaling" {}
+variable "write_capacity_autoscaling" {}
+variable "gsi_capacity_autoscaling" {}

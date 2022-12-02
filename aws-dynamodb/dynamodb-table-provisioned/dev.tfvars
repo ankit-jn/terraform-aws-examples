@@ -52,3 +52,28 @@ global_secondary_indexes = [
 ]
 
 provision_contributor_insights = true
+
+enable_autoscaling = true
+
+read_capacity_autoscaling = {
+    max_capacity = 2
+}
+
+write_capacity_autoscaling = {
+    max_capacity = 2
+    scale_in_cooldown = 60
+    scale_out_cooldown = 40
+    target_utilization = 60
+}
+
+gsi_capacity_autoscaling = {
+    "GSI-1" = {
+        min_read_capacity = 1
+        max_read_capacity = 2
+        min_write_capacity = 1
+        max_write_capacity = 2
+        scale_in_cooldown = 70
+        scale_out_cooldown = 60
+        target_utilization = 80
+    }
+}

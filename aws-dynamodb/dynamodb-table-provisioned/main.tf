@@ -1,8 +1,7 @@
 
 module "dynamodb" {
     source = "git::https://github.com/arjstack/terraform-aws-dynamodb.git"
-	# source = "../../../terraform-aws-dynamodb"
-    
+	
 	name = var.name
 
 	partition_key_name = var.partition_key_name
@@ -30,5 +29,11 @@ module "dynamodb" {
 	global_secondary_indexes = var.global_secondary_indexes
 
 	provision_contributor_insights = var.provision_contributor_insights 
-	
+
+	enable_autoscaling = var.enable_autoscaling
+
+	read_capacity_autoscaling = var.read_capacity_autoscaling
+	write_capacity_autoscaling = var.write_capacity_autoscaling
+
+	gsi_capacity_autoscaling = var.gsi_capacity_autoscaling
 }
