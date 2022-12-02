@@ -1,8 +1,7 @@
 
 module "dynamodb" {
-    source = "git::https://github.com/arjstack/terraform-aws-dynamodb.git"
-	# source = "../../../terraform-aws-dynamodb"
-    
+    source = "git::https://github.com/arjstack/terraform-aws-dynamodb.git?ref=v1.0.0"
+	
 	name = var.name
 	billing_mode = var.billing_mode
 
@@ -30,5 +29,4 @@ module "dynamodb" {
 	replicas = var.replicas
 
 	provision_contributor_insights = var.provision_contributor_insights 
-	
 }
