@@ -1,9 +1,10 @@
 
 module "dynamodb" {
-    #source = "git::https://github.com/arjstack/terraform-aws-dynamodb.git?ref=v1.0.0"
-	source = "../../terraform-aws-dynamodb"
+    source = "git::https://github.com/arjstack/terraform-aws-dynamodb.git"
+	# source = "../../../terraform-aws-dynamodb"
     
 	name = var.name
+	billing_mode = var.billing_mode
 
 	partition_key_name = var.partition_key_name
 	partition_key_type = var.partition_key_type
@@ -12,9 +13,6 @@ module "dynamodb" {
 	sort_key_type = var.sort_key_type
 
 	attributes = var.attributes
-	
-	read_capacity = var.read_capacity
-	write_capacity = var.write_capacity
 
 	stream_enabled = var.stream_enabled
 

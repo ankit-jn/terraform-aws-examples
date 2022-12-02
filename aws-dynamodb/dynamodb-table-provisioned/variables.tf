@@ -24,6 +24,4 @@ variable "enable_server_side_encryption" {}
 variable "local_secondary_indexes" {}
 variable "global_secondary_indexes" {}
 
-variable "replicas" {}
-
 variable "provision_contributor_insights" {}

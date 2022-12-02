@@ -1,4 +1,5 @@
 name = "arjstack-inventory"
+billing_mode = "PAY_PER_REQUEST"
 
 partition_key_name = "ArticleId"
 partition_key_type = "S"
@@ -16,9 +17,6 @@ attributes = [
         type = "S"
     }
 ]
-
-read_capacity = 1
-write_capacity = 1
 
 stream_enabled = true
 

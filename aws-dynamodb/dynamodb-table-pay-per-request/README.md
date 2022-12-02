@@ -1,6 +1,6 @@
-## ARJ-Stack: Terraform AWS -> DynamoDB Table Example
+## ARJ-Stack: Terraform AWS -> DynamoDB Table - `PAY-PER-REQUEST` (Billing Mode) Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS - DynamoDB](https://github.com/arjstack/terraform-aws-dynamodb) utilization to provision DynamoDB table.
+This Example configuration is a demonstration of [Module: Terraform AWS - DynamoDB](https://github.com/arjstack/terraform-aws-dynamodb) utilization to provision DynamoDB table in `PAY-PER-REQUEST` (Billing Mode).
 
 #### Resources to be provisioned as an outcome of this example
 ---
