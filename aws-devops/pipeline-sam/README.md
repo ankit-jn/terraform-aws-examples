@@ -19,7 +19,7 @@ This folder contains the SAM template (`template.yml`) and Nested Cloudformation
 
 | Resource | Name | Purpose |
 |------|---------|---------|
-| <a name="codecommit_repository"></a> [codecommit_repository](#requirement\_codecommit\_repository) | `"arjstack-application"` | CodeCommit Repository where the CFN Templates will be stored to provision the AWS resources |
+| <a name="codecommit_repository"></a> [codecommit_repository](#requirement\_codecommit\_repository) | `"arjstack-application"` | CodeCommit Repository where the SAM Templates will be stored to provision the AWS resources |
 | <a name="sns_topic"></a> [sns_topic](#requirement\_sns\_topic) | `"arjstack-devops-notification"` | This SNS topic is used for notification in Appproval stage |
 | <a name="sns_topic_subscription"></a> [sns_topic_subscription](#requirement\_sns\_topic\_subscription) |  | Subscription to SNS topic so that reviewer is notified (preferably Email based subscription) |
 
