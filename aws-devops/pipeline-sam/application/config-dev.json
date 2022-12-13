@@ -1,0 +1,9 @@
+{
+    "Parameters" : {
+      "ApplicationName" : "TrainingServices",
+      "Environment" : "Dev",
+      "SubnetIds": "subnet-xxxxxxx,subnet-yyyyyyyy",
+      "SecurityGroupIds": "sg-aaaaaaaaaaa,sg-bbbbbbbbbb"
+    }
+  }
+  

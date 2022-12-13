@@ -1,0 +1,108 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+
+Description: SAM Deployment - API Gateway and Lambda functions
+
+Globals:
+  Function:
+    Handler: lambda_function.lambda_handler
+    Runtime: python3.9
+    Layers:
+      - !Ref LambdaLayer
+    Timeout: 8
+    VpcConfig:
+      SecurityGroupIds:
+        Fn::Split:
+          - ","
+          - !Ref SecurityGroupIds
+      SubnetIds:
+        Fn::Split:
+          - ","
+          - !Ref SubnetIds
+
+Parameters:
+  SubnetIds: 
+    Type: String
+    Description: The list of Subnet Ids
+  SecurityGroupIds: 
+    Type: String
+    Description: The list of Security Group Ids
+  ApplicationName:
+    Type: String
+    Description: Application Name
+  Environment:
+    Type: String
+    Description: Environment
+
+Resources:
+  ApiGateway:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: !Sub ${ApplicationName}-${Environment}
+      Cors:
+        AllowMethods: "'POST, GET'"
+        AllowHeaders: "'*'"
+        AllowOrigin: "'*'"
+        MaxAge: "'600'"
+        AllowCredentials: false
+
+  LambdaLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: !Sub "${ApplicationName}-${Environment}"
+      Description: Lambda layer with libraries to use in function
+      ContentUri: layers/
+      CompatibleRuntimes:
+        - python3.9
+
+  ExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      RoleName: !Sub "${ApplicationName}-${Environment}-Lambda-Role"
+      AssumeRolePolicyDocument: 
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      Path: /
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
+
+
+  GreetingLambdaFunction:
+    Type: "AWS::Serverless::Function"
+    
+    Properties:
+      FunctionName: !Sub 'Greetings-${Environment}'
+      CodeUri: greetings/
+      Role: !GetAtt ExecutionRole.Arn
+      
+      Events:
+        FeatureApi:
+          Type: Api
+          Properties:
+            RestApiId: !Ref ApiGateway
+            Path: "/training/greetings"
+            Method: get
+
+Outputs:
+  ApiGatewayId:
+    Description: "API Gateway End point URL"
+    Value: !Ref ApiGateway
+
+  ApiGatewayUrl:
+    Description: API Gateway End point URL
+    Value: !Sub https://${ApiGateway}.execute-api.${AWS::Region}.amazonaws.com/${ApplicationName}-${Environment}
+
+  Layer:
+    Description: Lambda Layer ARN
+    Value: !Ref LambdaLayer
+
+  GreetingsLambdaFunctionArn:
+    Description: "ARN of Greetings Lambda Function"
+    Value: !GetAtt GreetingLambdaFunction.Arn
