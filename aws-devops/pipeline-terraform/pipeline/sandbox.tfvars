@@ -161,6 +161,7 @@ pipeline_stages = [
                 configuration = {
                     RepositoryName = "arjstack-infrastructure"
                     BranchName   = "main"
+                    PollForSourceChanges = true
                 }
             }
         ]

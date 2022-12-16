@@ -17,7 +17,7 @@ phases:
       - export AWS_SESSION_TOKEN=`echo "$TF_EXECUTION_ROLE" | jq -r '.Credentials.SessionToken'`
       - sed -i -e "s/TF_STATE_FILE_BUCKET_NAME_PLACEHOLDER/$TF_STATE_FILE_BUCKET_NAME/" backend.tf
       - sed -i -e "s/TF_STATE_FILE_BUCKET_REGION_PLACEHOLDER/$TF_STATE_FILE_BUCKET_REGION/" backend.tf
-      - sed -i -e "s/TF_STATE_FILE_PLACEHOLDER/$TF_STATE_FILE_PATH\/terraform.tfstate'/" backend.tf
+      - sed -i -e "s/TF_STATE_FILE_PLACEHOLDER/$TF_STATE_FILE_PATH\/terraform.tfstate/" backend.tf
       
   build:
     commands:
