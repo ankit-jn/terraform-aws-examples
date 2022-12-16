@@ -1,0 +1,31 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - "curl -s -qL -o terraform.zip https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip"
+      - "unzip -o terraform.zip"
+      - "mv terraform /usr/local/bin/"
+
+  pre_build:
+    commands:
+      - echo "[INFO] Assuming TF Execution IAM role.. $TF_EXECUTION_ROLE_ARN"
+      - TF_EXECUTION_ROLE=`aws sts assume-role --role-arn "$TF_EXECUTION_ROLE_ARN" --role-session-name "$TF_PLAN_NAME"`
+      - export AWS_ACCESS_KEY_ID=`echo "$TF_EXECUTION_ROLE" | jq -r '.Credentials.AccessKeyId'`
+      - export AWS_SECRET_ACCESS_KEY=`echo "$TF_EXECUTION_ROLE" | jq -r '.Credentials.SecretAccessKey'`
+      - export AWS_SESSION_TOKEN=`echo "$TF_EXECUTION_ROLE" | jq -r '.Credentials.SessionToken'`
+      - sed -i -e "s/TF_STATE_FILE_BUCKET_NAME_PLACEHOLDER/$TF_STATE_FILE_BUCKET_NAME/" backend.tf
+      - sed -i -e "s/TF_STATE_FILE_BUCKET_REGION_PLACEHOLDER/$TF_STATE_FILE_BUCKET_REGION/" backend.tf
+      - sed -i -e "s/TF_STATE_FILE_PLACEHOLDER/$TF_STATE_FILE_PATH\/terraform.tfstate'/" backend.tf
+      
+  build:
+    commands:
+      - echo "[INFO] Initialize the Terraform"
+      - terraform init
+      - echo "[INFO] Apply the Terraform Plan"
+      - terraform apply -input=false "$CODEBUILD_SRC_DIR_TFPlan/$TF_PLAN_NAME.plan"
+    
+  post_build:
+    commands:
+      - echo terraform apply completed on `date`
