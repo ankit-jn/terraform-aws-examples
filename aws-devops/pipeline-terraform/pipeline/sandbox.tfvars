@@ -206,7 +206,7 @@ pipeline_stages = [
                 run_order = 3
                 embed_configuration = true
                 configuration = {
-                    ProjectName = "Apply"
+                    ProjectName = "TFApply"
                     PrimarySource = "SourceArtifact"
                 }
             }
