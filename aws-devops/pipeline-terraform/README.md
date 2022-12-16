@@ -1,4 +1,4 @@
-## ARJ-Stack: Terraform AWS -> AWS DevOps Example: CodePipeline for SAM Deployment
+## ARJ-Stack: Terraform AWS -> AWS DevOps Example: CodePipeline for Terraform Managed Infrastructure Deployment
 
 This Example configuration is a demonstration of [Module: Terraform AWS DevOps](https://github.com/arjstack/terraform-aws-devops) utilization to create Pipeline for Terraform managed Infrastructure deployment.
 
