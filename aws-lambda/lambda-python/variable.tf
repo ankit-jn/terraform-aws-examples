@@ -1,0 +1,12 @@
+variable "name" {}
+variable "policies" {}
+variable "description" {}
+variable "runtime" {}
+variable "handler" {}
+variable "publish" {}
+variable "environment_variables" {}
+variable "subnet_ids" {}
+variable "sg_ids" {}
+variable "aliases" {}
+variable "create_lambda_function_url" {}
+variable "tags" {}
