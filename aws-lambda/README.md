@@ -1,39 +1,12 @@
-## ARJ-Stack: Terraform AWS -> Lambda Function Example
+## ARJ-Stack: Terraform AWS - Lambda Examples
 
-This Example configuration is a demonstration of [Module: Terraform AWS Lambda Function](https://github.com/arjstack/terraform-aws-lambda) utilization to provision Lambda Functions
+Set of Example Configurations to provision AWS Lambda Functions.
 
+#### Amazon Lambda Example: Python based Lambda
 
-#### Resources to be provisioned as an outcome of this example
----
+This Example configuration is used to provision AWS Lambda.
 
-| Sr. No. | Resource Type | Resource Name | Additional Details |
-|:------|:------|:------|:------|
-| 1 | Lambda Function |  |  |
-
-### Requirements
-
-| Name | Version |
-|------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.22.0 |
-
-### Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.22.0 |
-
-### Usages
-
-To run this example you need to execute:
-
-```bash
-$ terraform init
-$ terraform plan --var-file=dev.tfvars
-$ terraform apply --var-file=dev.tfvars
-```
-
-Note: Select the correct the AWS provider configurations in `provider.tf` file
+Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-lambda/lambda-python) for the code-base to utilize [Module: Terraform AWS - Lambda](https://github.com/arjstack/terraform-aws-lambda) in order to provision AWS Lambda.
 
 ### Authors
 
