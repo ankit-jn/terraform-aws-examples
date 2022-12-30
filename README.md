@@ -14,6 +14,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-cdn) for utilizing [Module: Terraform AWS Clodfront Distribution Network (CDN)](https://github.com/arjstack/terraform-aws-cdn)
 
+#### AWS: Cognito Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-cognito) for utilizing [Module: Terraform AWS Cognito](https://github.com/arjstack/terraform-aws-cognito)
+
 #### AWS: DevOps Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-devops) for utilizing [Module: Terraform DevOps Services](https://github.com/arjstack/terraform-aws-devops)
@@ -65,6 +69,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 #### AWS: Simple Storage Service (S3) Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-s3) for utilizing [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/arjstack/terraform-aws-s3)
+
+#### AWS: Secret Manager Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-secret-manager) for utilizing [Module: Terraform AWS Secret Manager](https://github.com/arjstack/terraform-aws-secret-manager)
 
 #### AWS: Security Groups Examples
 
