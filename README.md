@@ -78,6 +78,10 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-security-groups) for utilizing [Module: Terraform AWS Security Groups](https://github.com/arjstack/terraform-aws-security-groups)
 
+#### AWS: Simple Queue Service (SQS) Examples
+
+Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-sqs) for utilizing [Module: Terraform AWS Simple Queue Service (SQS)](https://github.com/arjstack/terraform-aws-sqs)
+
 #### AWS: Amazon Timestream Examples
 
 Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-timestream) for utilizing [Module: Terraform AWS - Amazon Timestream](https://github.com/arjstack/terraform-aws-timestream)
