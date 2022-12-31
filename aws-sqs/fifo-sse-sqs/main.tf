@@ -1,6 +1,5 @@
 module "sqs" {
-    # source = "git::https://github.com/arjstack/terraform-aws-sqs.git?ref=v1.0.0"
-    source = "../../../terraform-aws-sqs"
+    source = "git::https://github.com/arjstack/terraform-aws-sqs.git?ref=v1.0.0"
     
     name = var.name
     fifo_queue = var.fifo_queue
