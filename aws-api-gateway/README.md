@@ -1,6 +1,6 @@
-## ARJ-Stack: Terraform AWS API Gateway v2 Examples
+## ARJ-Stack: Terraform AWS API Gateway Examples
 
-Set of Example Configurations to create AWS API Gatway v2 resources
+Set of Example Configurations to create AWS API Gatway resources
 
 ### Authors
 
