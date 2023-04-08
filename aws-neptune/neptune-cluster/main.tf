@@ -1,5 +1,5 @@
 module "neptune" {
-    source = "git::https://github.com/arjstack/terraform-aws-neptune.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-neptune.git"
     
     engine          = var.engine
     engine_version  = var.engine_version

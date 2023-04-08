@@ -1,5 +1,5 @@
 module "cloudfront" {
-    source = "git::https://github.com/arjstack/terraform-aws-cdn.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-cdn.git"
     
     price_class = var.price_class
     default_root_object = var.default_root_object
@@ -31,14 +31,14 @@ module "cloudfront" {
 }
 
 module "s3_bucket" {
-    source = "git::https://github.com/arjstack/terraform-aws-s3?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-s3"
     
     name = var.bucket_name
     default_tags = merge(var.default_tags, var.cdn_tags, var.s3_tags)
 }
 
 module "s3_bucket_policy" {
-    source = "git::https://github.com/arjstack/terraform-aws-s3?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-s3"
     
     name = var.bucket_name
     create = false

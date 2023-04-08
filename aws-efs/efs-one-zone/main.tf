@@ -1,5 +1,5 @@
 module "efs" {
-    source = "git::https://github.com/arjstack/terraform-aws-efs.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-efs.git"
 
     name = var.name
     availability_zone_name = var.availability_zone_name

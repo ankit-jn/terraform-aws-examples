@@ -1,6 +1,6 @@
 
 module "dynamodb" {
-    source = "git::https://github.com/arjstack/terraform-aws-dynamodb.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-dynamodb.git"
 	
 	name = var.name
 

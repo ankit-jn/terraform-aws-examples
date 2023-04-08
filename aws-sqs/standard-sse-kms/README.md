@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> SQS: Standard Queue with SSE-KMS (AWS Owned) Encryption Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS Simple Queue Service (SQS)](https://github.com/arjstack/terraform-aws-sqs) utilization to create SQS Queue (Standard) with message encryption through SSE-KMS (AWS owned).
+This Example configuration is a demonstration of [Module: Terraform AWS Simple Queue Service (SQS)](https://github.com/ankit-jn/terraform-aws-sqs) utilization to create SQS Queue (Standard) with message encryption through SSE-KMS (AWS owned).
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -41,4 +41,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

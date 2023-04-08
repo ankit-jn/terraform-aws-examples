@@ -1,5 +1,5 @@
 module "devops" {
-    source = "git::https://github.com/arjstack/terraform-aws-devops.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-devops.git"
     
     create_repository = var.create_repository
     repository_name = var.repository_name

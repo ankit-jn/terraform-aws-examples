@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> VPC Peering (Accepter Only)
 
-This Example configuration is a demonstration of [Module: Terraform AWS VPC Peering](https://github.com/arjstack/terraform-aws-vpc-peering) utilization to acccept VPC Peering request from VPC in `ap-south-1` region.
+This Example configuration is a demonstration of [Module: Terraform AWS VPC Peering](https://github.com/ankit-jn/terraform-aws-vpc-peering) utilization to acccept VPC Peering request from VPC in `ap-south-1` region.
 
 - Handling for accepter side (`peer`) Only
 
@@ -39,4 +39,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

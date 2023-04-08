@@ -2,7 +2,7 @@ data aws_caller_identity "this" {}
 data "aws_region" "current" {}
 
 module "kms" {
-    source = "git::https://github.com/arjstack/terraform-aws-kms.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-kms.git"
 
     account_id = data.aws_caller_identity.this.account_id
 

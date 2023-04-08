@@ -1,5 +1,5 @@
 module "timestream" {
-    source = "git::https://github.com/arjstack/terraform-aws-timestream?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-timestream"
     
     database_name   = var.database_name
 

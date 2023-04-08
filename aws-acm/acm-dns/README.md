@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Certificate with DNS based Validation
 
-This Example configuration is a demonstration of [Module: Terraform AWS Certification Manager (ACM)](https://github.com/arjstack/terraform-aws-acm) utilization to request Certificate from ACM with DNS based validation.
+This Example configuration is a demonstration of [Module: Terraform AWS Certification Manager (ACM)](https://github.com/ankit-jn/terraform-aws-acm) utilization to request Certificate from ACM with DNS based validation.
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -39,4 +39,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

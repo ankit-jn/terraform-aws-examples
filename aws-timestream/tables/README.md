@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Amazon Timestream Tables Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS - Amazon Timestream](https://github.com/arjstack/terraform-aws-timestream) utilization to create tables in Timestream database with different configurations.
+This Example configuration is a demonstration of [Module: Terraform AWS - Amazon Timestream](https://github.com/ankit-jn/terraform-aws-timestream) utilization to create tables in Timestream database with different configurations.
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -37,4 +37,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

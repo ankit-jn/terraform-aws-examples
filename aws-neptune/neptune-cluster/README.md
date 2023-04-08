@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Neptune - Graph Database Cluster Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS Neptune Service](https://github.com/arjstack/terraform-aws-neptune) utilization to create Neptune - Graph Database cluster with 3 Neptune instances and custom endpoint
+This Example configuration is a demonstration of [Module: Terraform AWS Neptune Service](https://github.com/ankit-jn/terraform-aws-neptune) utilization to create Neptune - Graph Database cluster with 3 Neptune instances and custom endpoint
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -46,4 +46,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

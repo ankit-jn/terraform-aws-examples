@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Regional Amazon Aurora Mysql - serverless Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/arjstack/terraform-aws-rds-aurora) utilization to create Regional Amazon Aurora MySQL serverless cluster with scaling configurations.
+This Example configuration is a demonstration of [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/ankit-jn/terraform-aws-rds-aurora) utilization to create Regional Amazon Aurora MySQL serverless cluster with scaling configurations.
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -51,4 +51,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

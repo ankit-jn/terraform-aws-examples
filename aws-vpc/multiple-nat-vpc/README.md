@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> VPC Example: VPC with Multiple NAT Gateways
 
-This Example configuration is a demonstration of [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) utilization to create a AWS VPC with the following features:
+This Example configuration is a demonstration of [Module: Terraform AWS VPC](https://github.com/ankit-jn/terraform-aws-vpc) utilization to create a AWS VPC with the following features:
  - Attachment of additonal CIDR with VPC
  - Multiple subnets (For the different wrokloads) from both CIDR (primary as well as secondary CIDR)
  - Dedicated NACL for each subnet
@@ -82,4 +82,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Load Balancer Example: Gateway Load Balancer with GENEVE/6081 Listener
 
-This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) utilization to create Gateway Load Balancer, target Group and Implicit Listener
+This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/ankit-jn/terraform-aws-load-balancer) utilization to create Gateway Load Balancer, target Group and Implicit Listener
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -39,4 +39,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

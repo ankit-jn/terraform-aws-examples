@@ -1,5 +1,5 @@
 module "msk_serverless" {
-    source = "git::https://github.com/arjstack/terraform-aws-msk-serverless.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-msk-serverless.git"
     
     cluster_name = var.cluster_name
 

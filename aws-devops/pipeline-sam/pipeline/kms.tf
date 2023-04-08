@@ -3,7 +3,7 @@
 ## 2. CodeBuild Bucket (if created as part of the provisioning)
 ## 3. CodePipeline Bucket (if created as part of the provisioning)
 module "encryption" {
-    source = "git::https://github.com/arjstack/terraform-aws-kms.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-kms.git"
 
     account_id = data.aws_caller_identity.this.account_id
 

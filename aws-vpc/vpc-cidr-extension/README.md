@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> VPC Example: VPC with additional CIDR
  
-This Example Configuration is a demonstration of [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) utilization to create AWS VPC with 2 subnets from its primary CIDR having its own dedicated NACL and deciated route table along with additional seconday CIDR which is utilized to create 2 more Infra subnets.
+This Example Configuration is a demonstration of [Module: Terraform AWS VPC](https://github.com/ankit-jn/terraform-aws-vpc) utilization to create AWS VPC with 2 subnets from its primary CIDR having its own dedicated NACL and deciated route table along with additional seconday CIDR which is utilized to create 2 more Infra subnets.
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -60,4 +60,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

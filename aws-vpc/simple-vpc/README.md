@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> VPC Example: Simple VPC
 
-This Example Configuration is a demonstration of [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) utilization to create a Simple AWS VPC with 1 public subnet having its own dedicated NACL and deciated Route Table.
+This Example Configuration is a demonstration of [Module: Terraform AWS VPC](https://github.com/ankit-jn/terraform-aws-vpc) utilization to create a Simple AWS VPC with 1 public subnet having its own dedicated NACL and deciated Route Table.
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -47,4 +47,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

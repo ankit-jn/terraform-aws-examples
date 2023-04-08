@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Load Balancer Example: Internet Facing Network Load Balancer
 
-This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) utilization to create Network Load Balancer along with Elastic IP Adresses to be used for its networking
+This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/ankit-jn/terraform-aws-load-balancer) utilization to create Network Load Balancer along with Elastic IP Adresses to be used for its networking
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -38,4 +38,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

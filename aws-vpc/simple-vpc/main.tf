@@ -1,6 +1,6 @@
 ## Create VPC along with public subnets
 module "vpc" {
-    source = "git::https://github.com/arjstack/terraform-aws-vpc.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-vpc.git"
     
     vpc_name = var.vpc_name
     ipv4_cidr_block = var.vpc_cidr

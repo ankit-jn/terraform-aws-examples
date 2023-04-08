@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> S3 Simple Bucket (private) Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/arjstack/terraform-aws-s3) utilization to create Simple but private S3 bucket
+This Example configuration is a demonstration of [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/ankit-jn/terraform-aws-s3) utilization to create Simple but private S3 bucket
 
 
 ### Requirements
@@ -30,4 +30,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

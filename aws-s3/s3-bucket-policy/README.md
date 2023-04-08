@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> S3 Bucket and Bucket Policy Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/arjstack/terraform-aws-s3) utilization to create S3 bucket along with Buckey Policy (thorugh policy file as well as policy contents).
+This Example configuration is a demonstration of [Module: Terraform AWS Simple Storage Service (S3)](https://github.com/ankit-jn/terraform-aws-s3) utilization to create S3 bucket along with Buckey Policy (thorugh policy file as well as policy contents).
 
 
 ### Requirements
@@ -30,4 +30,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

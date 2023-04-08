@@ -1,13 +1,13 @@
 ## ARJ-Stack: Terraform AWS -> AWS DevOps Example: CodePipeline for Terraform Managed Infrastructure Deployment
 
-This Example configuration is a demonstration of [Module: Terraform AWS DevOps](https://github.com/arjstack/terraform-aws-devops) utilization to create Pipeline for Terraform managed Infrastructure deployment.
+This Example configuration is a demonstration of [Module: Terraform AWS DevOps](https://github.com/ankit-jn/terraform-aws-devops) utilization to create Pipeline for Terraform managed Infrastructure deployment.
 
 ### How to use?
 This project has the following components:
 
 #### pipeline
 
-This folder contains the Terraform code for provisioning CodePipeline and supporting resources via utilization of [Module: Terraform AWS DevOps](https://github.com/arjstack/terraform-aws-devops).
+This folder contains the Terraform code for provisioning CodePipeline and supporting resources via utilization of [Module: Terraform AWS DevOps](https://github.com/ankit-jn/terraform-aws-devops).
 
 #### infrastructure
 
@@ -51,4 +51,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

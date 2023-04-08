@@ -1,6 +1,6 @@
 # DevOps Roles for CloudFormation
 module "tf_execution" {
-    source = "git::https://github.com/arjstack/terraform-aws-iam.git?ref=v1.1.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-iam.git"
     
     policies = local.tf_execution_policy
     trusted_account_roles   = local.tf_execution_role_def

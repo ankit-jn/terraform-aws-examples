@@ -7,13 +7,13 @@ Set of Example Configurations to create AWS VPC
 
 This Example configuration is used to create a Simple AWS VPC with 1 public subnet having its own dedicated NACL and deciated Route Table.
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc/simple-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) in order to create Simple VPC as stated above.
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-vpc/simple-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/ankit-jn/terraform-aws-vpc) in order to create Simple VPC as stated above.
 
 #### VPC Example: VPC with additional CIDR
 
 This Example configuration is used to create a Simple VPC with 2 subnets from its primary CIDR having its own dedicated NACL and deciated route table along with additional seconday CIDR which is utilized to create 2 more Infra subnets.
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc/vpc-cidr-extension) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) in order to create VPC as stated above.
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-vpc/vpc-cidr-extension) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/ankit-jn/terraform-aws-vpc) in order to create VPC as stated above.
 
 #### VPC Example: Enhanced VPC
 
@@ -31,7 +31,7 @@ This Example configuration is used to create Enhanced AWS VPC with the following
  - Defalt VPC resources
  - etc...
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc/enhanced-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) in order to create Enhanced VPC as stated above.
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-vpc/enhanced-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/ankit-jn/terraform-aws-vpc) in order to create Enhanced VPC as stated above.
 
 #### VPC Example: VPC with Single NAT Gateway
 
@@ -48,7 +48,7 @@ This Example configuration is used to create AWS VPC having Single NAT Gateway w
  - Well Managed tagging on resources
  - etc...
 
-Refer [Configuration Example](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc/single-nat-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) in order to create VPC as stated above.
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-vpc/single-nat-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/ankit-jn/terraform-aws-vpc) in order to create VPC as stated above.
 
 #### VPC Example: VPC with Multiple NAT Gateways
 
@@ -65,8 +65,8 @@ This Example configuration is used to create AWS VPC having multiple NAT Gateway
  - Well Managed tagging on resources
  - etc...
 
-Refer [Configuration Exampl](https://github.com/arjstack/terraform-aws-examples/tree/main/aws-vpc/multiple-nat-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/arjstack/terraform-aws-vpc) in order to create VPC as stated above.
+Refer [Configuration Exampl](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-vpc/multiple-nat-vpc) for the code-base to utilize [Module: Terraform AWS VPC](https://github.com/ankit-jn/terraform-aws-vpc) in order to create VPC as stated above.
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

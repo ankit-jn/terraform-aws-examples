@@ -1,7 +1,7 @@
 variable "repositories" {}
 
 module "ecr" {
-    source = "git::https://github.com/arjstack/terraform-aws-ecr.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-ecr.git"
 
     repositories = var.repositories
 }

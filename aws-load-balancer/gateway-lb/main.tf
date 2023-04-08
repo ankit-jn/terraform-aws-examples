@@ -1,5 +1,5 @@
 module "gateway_lb" {
-    source = "git::https://github.com/arjstack/terraform-aws-load-balancer.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-load-balancer.git"
     
     name    = var.name
     lb_type = var.lb_type

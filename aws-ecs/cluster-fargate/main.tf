@@ -1,5 +1,5 @@
 module "ecs" {
-  source = "git::https://github.com/arjstack/terraform-aws-ecs.git?ref=v1.0.0"
+  source = "git::https://github.com/ankit-jn/terraform-aws-ecs.git"
 
   cluster_name = var.cluster_name
   use_fargate = var.use_fargate

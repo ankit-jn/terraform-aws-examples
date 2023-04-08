@@ -1,6 +1,6 @@
 ## Global Aurora Cluster + Regional Primary Aurora MySQL Cluster
 module "aurora" {
-    source = "git::https://github.com/arjstack/terraform-aws-rds-aurora.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-rds-aurora.git"
     
     create_global_cluster   = true
     global_cluster_name     = var.global_cluster_name
@@ -49,7 +49,7 @@ module "aurora" {
 
 ## Regional Secondary Aurora MySQL Cluster
 module "aurora_secondary" {
-    source = "git::https://github.com/arjstack/terraform-aws-rds-aurora.git?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-rds-aurora.git"
 
     providers = {
         aws = aws.secondary

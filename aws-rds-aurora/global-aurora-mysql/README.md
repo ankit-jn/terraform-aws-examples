@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Global Amazon Aurora Mysql Cluster Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/arjstack/terraform-aws-rds-aurora) utilization to create Global Amazon Aurora MySQL RDS cluster and Regional Amazon Aurora MySQL clusters (Primary and Secondary) with DB instance corresponding to its own regional cluster
+This Example configuration is a demonstration of [Module: Terraform AWS Relational Database Service - Amazon Aurora](https://github.com/ankit-jn/terraform-aws-rds-aurora) utilization to create Global Amazon Aurora MySQL RDS cluster and Regional Amazon Aurora MySQL clusters (Primary and Secondary) with DB instance corresponding to its own regional cluster
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -64,4 +64,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

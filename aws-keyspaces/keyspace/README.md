@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Amazon Keyspace (for Apache Cassandra) Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS - Amazon Keyspace (for Apache Cassandra)](https://github.com/arjstack/terraform-aws-keyspaces) utilization to provision a scalable, highly available, and managed Apache Cassandra–compatible database.
+This Example configuration is a demonstration of [Module: Terraform AWS - Amazon Keyspace (for Apache Cassandra)](https://github.com/ankit-jn/terraform-aws-keyspaces) utilization to provision a scalable, highly available, and managed Apache Cassandra–compatible database.
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -36,4 +36,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

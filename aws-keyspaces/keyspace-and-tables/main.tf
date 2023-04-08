@@ -1,5 +1,5 @@
 module "keyspaces" {
-    source = "git::https://github.com/arjstack/terraform-aws-keyspaces?ref=v1.0.0"
+    source = "git::https://github.com/ankit-jn/terraform-aws-keyspaces"
     
     keyspace_name   = var.keyspace_name
 

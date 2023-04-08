@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> AWS DevOps Example: CodeCommit Repository
 
-This Example configuration is a demonstration of [Module: Terraform AWS DevOps](https://github.com/arjstack/terraform-aws-devops) utilization to create CodeCommit Repository
+This Example configuration is a demonstration of [Module: Terraform AWS DevOps](https://github.com/ankit-jn/terraform-aws-devops) utilization to create CodeCommit Repository
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -36,4 +36,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

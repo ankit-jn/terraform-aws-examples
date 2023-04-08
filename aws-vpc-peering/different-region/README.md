@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Cross Region VPC Peering
 
-This Example configuration is a demonstration of [Module: Terraform AWS VPC Peering](https://github.com/arjstack/terraform-aws-vpc-peering) utilization to create VPC Peering between VPC from `ap-south-1` region and the VPC form `eu-central-1` region. Based of provider alias config, VPC could be in same account or in multiple acconts.
+This Example configuration is a demonstration of [Module: Terraform AWS VPC Peering](https://github.com/ankit-jn/terraform-aws-vpc-peering) utilization to create VPC Peering between VPC from `ap-south-1` region and the VPC form `eu-central-1` region. Based of provider alias config, VPC could be in same account or in multiple acconts.
 
 - Handling for both side `Owner` and `Peer`
 
@@ -42,4 +42,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

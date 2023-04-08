@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> ECS Example: ECS Cluster with AWS Fargate and ECS Service
 
-This Example configuration is a demonstration of [Module: Terraform AWS ECS](https://github.com/arjstack/terraform-aws-ecs) utilization to manage AWS Fargate ECS Cluster and ECS Service
+This Example configuration is a demonstration of [Module: Terraform AWS ECS](https://github.com/ankit-jn/terraform-aws-ecs) utilization to manage AWS Fargate ECS Cluster and ECS Service
 
 
 #### Resources to be provisioned as an outcome of this example
@@ -58,4 +58,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

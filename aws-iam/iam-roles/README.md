@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Roles Management along with Policy to be assigned
 
-This Example configuration is a demonstration of [Module: Terraform AWS IAM](https://github.com/arjstack/terraform-aws-iam) utilization to manage IAM roles.
+This Example configuration is a demonstration of [Module: Terraform AWS IAM](https://github.com/ankit-jn/terraform-aws-iam) utilization to manage IAM roles.
 
 
 #### Resources to be provisioned as an outcome of this example
@@ -58,4 +58,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).

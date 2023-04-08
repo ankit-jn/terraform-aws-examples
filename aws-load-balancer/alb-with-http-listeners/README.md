@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Load Balancer Example: Internet Facing Application Load Balancer with HTTP Listeners
 
-This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/arjstack/terraform-aws-load-balancer) utilization to create Application Load Balancer with rich combination of target groups and HTTP based listeners and rules
+This Example configuration is a demonstration of [Module: Terraform AWS Load Balancer](https://github.com/ankit-jn/terraform-aws-load-balancer) utilization to create Application Load Balancer with rich combination of target groups and HTTP based listeners and rules
 
 #### Resources to be provisioned as an outcome of this example
 ---
@@ -52,4 +52,4 @@ Note: Select the correct the AWS provider configurations in `provider.tf` file
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/terraform-aws-examples/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/terraform-aws-examples/graphs/contributors).
