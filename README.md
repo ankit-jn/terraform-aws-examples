@@ -2,10 +2,6 @@
 
 This repository is bundled with examples for provisioning resources in AWS using Terraform modules
 
-#### AWS: API Gateway Examples
-
-Refer [Configuration Examples](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-api-gateway) for utilizing [Module: Terraform AWS API Gateway](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-api-gateway)
-
 #### AWS: Certificate Manager (ACM) Examples
 
 Refer [Configuration Examples](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-acm) for utilizing [Module: Terraform AWS Certificate Manager (ACM)](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-acm)
