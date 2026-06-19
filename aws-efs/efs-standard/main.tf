@@ -1,5 +1,5 @@
 module "efs" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-efs.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-efs?ref=main"
     
     name = var.name
 

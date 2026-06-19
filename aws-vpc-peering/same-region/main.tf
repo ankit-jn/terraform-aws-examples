@@ -1,5 +1,5 @@
 module "peering" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-vpc-peering.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-vpc-peering?ref=main"
     
     providers = {
         aws.owner = aws

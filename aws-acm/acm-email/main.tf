@@ -1,5 +1,5 @@
 module "acm" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-acm.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-acm?ref=main"
     
     domain_name = var.domain_name
     alternative_domains = var.alternative_domains

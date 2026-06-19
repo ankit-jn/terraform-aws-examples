@@ -1,6 +1,6 @@
 
 module "dynamodb" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-dynamodb.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-dynamodb?ref=main"
 	
 	name = var.name
 	billing_mode = var.billing_mode

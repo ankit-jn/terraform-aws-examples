@@ -1,5 +1,5 @@
 module "nlb" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-load-balancer.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-load-balancer?ref=main"
     
     name    = var.name
     lb_type = var.lb_type

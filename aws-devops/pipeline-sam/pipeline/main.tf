@@ -1,5 +1,5 @@
 module "devops" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-devops.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-devops?ref=main"
     
     repository_name = var.repository_name
     environment     = var.environment
@@ -39,7 +39,7 @@ module "devops" {
 
 # DevOps Roles for CloudFormation
 module "iam_cfn" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-iam.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-iam?ref=main"
     
     policies = local.cfn_policy
     service_linked_roles = local.cfn_role_def

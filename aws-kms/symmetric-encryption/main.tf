@@ -1,5 +1,5 @@
 module "kms" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-kms.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-kms?ref=main"
 
     account_id = var.account_id
 

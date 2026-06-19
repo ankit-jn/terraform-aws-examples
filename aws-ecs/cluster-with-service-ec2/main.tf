@@ -1,5 +1,5 @@
 module "ecs" {
-  source = "git::https://github.com/ankit-jn/terraform-aws-ecs.git"
+  source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-ecs?ref=main"
   
   ## ECS CLuster
   cluster_name = var.cluster_name

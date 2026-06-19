@@ -1,5 +1,5 @@
 module "timestream" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-timestream"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-timestream?ref=main"
     
     database_name   = var.database_name
     create_kms_key = true

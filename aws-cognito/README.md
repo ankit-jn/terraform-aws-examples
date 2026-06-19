@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Cognito Example
 
-This Example configuration is a demonstration of [Module: Terraform AWS Cognito](https://github.com/ankit-jn/terraform-aws-cognito) utilization to provision Cognito User Pool and Cognito Identity Pool. 
+This Example configuration is a demonstration of [Module: Terraform AWS Cognito](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-cognito) utilization to provision Cognito User Pool and Cognito Identity Pool. 
 
 #### Resources to be provisioned as an outcome of this example
 ---

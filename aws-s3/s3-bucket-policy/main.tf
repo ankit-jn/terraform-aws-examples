@@ -1,5 +1,5 @@
 module "s3" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-s3"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-s3?ref=main"
     
     name = var.name
     

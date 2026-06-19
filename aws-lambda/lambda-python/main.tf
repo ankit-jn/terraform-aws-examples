@@ -1,5 +1,5 @@
 module "lambda" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-lambda.git"   
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-lambda?ref=main"   
     
     name = var.name
     policies = var.policies

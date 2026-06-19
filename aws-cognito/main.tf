@@ -1,5 +1,5 @@
 module "cognito_user_pool" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-cognito.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-cognito?ref=main"
     
     create_user_pool = true
     user_pool_name = var.user_pool_name
@@ -18,7 +18,7 @@ module "cognito_user_pool" {
 }
 
 module "cognito_identity_pool" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-cognito.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-cognito?ref=main"
     
     create_identity_pool = true
     identity_pool_name = var.identity_pool_name

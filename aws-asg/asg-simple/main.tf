@@ -9,7 +9,7 @@ data template_file "user_data" {
 }
 
 module "asg" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-asg.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules//aws-asg?ref=main"
     
     ### ASG Specific values
     name = var.name

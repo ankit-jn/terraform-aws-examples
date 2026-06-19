@@ -1,5 +1,5 @@
 module "sqs" {
-    source = "git::https://github.com/ankit-jn/terraform-aws-sqs.git"
+    source = "git::https://github.com/ankit-jn/terraform-aws-modules.git//aws-sqs?ref=main"
     
     name = var.name
 
