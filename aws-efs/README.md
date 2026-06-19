@@ -6,13 +6,13 @@ Set of Example Configurations to create Elastic File System in AWS
 
 This Example configuration is used to create One Zone File System
 
-Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-efs/efs-one-zone) for the code-base to utilize [Module: Terraform AWS Elastic File System (EFS)](https://github.com/ankit-jn/terraform-aws-efs) in order to Create File system as stated above
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-efs/efs-one-zone) for the code-base to utilize [Module: Terraform AWS Elastic File System (EFS)](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-efs) in order to Create File system as stated above
 
 #### Elastic File System (EFS) Example: Standard File System (Multiple Availability Zone)
 
 This Example configuration is used to create Standard File System
 
-Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-efs/efs-standard) for the code-base to utilize [Module: Terraform AWS Elastic File System (EFS)](https://github.com/ankit-jn/terraform-aws-efs) in order to Create File system as stated above
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-efs/efs-standard) for the code-base to utilize [Module: Terraform AWS Elastic File System (EFS)](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-efs) in order to Create File system as stated above
 
 
 ### Authors

@@ -6,7 +6,7 @@ Set of Example Configurations to provision AWS Lambda Functions.
 
 This Example configuration is used to provision AWS Lambda.
 
-Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-lambda/lambda-python) for the code-base to utilize [Module: Terraform AWS - Lambda](https://github.com/ankit-jn/terraform-aws-lambda) in order to provision AWS Lambda.
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-lambda/lambda-python) for the code-base to utilize [Module: Terraform AWS - Lambda](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-lambda) in order to provision AWS Lambda.
 
 ### Authors
 

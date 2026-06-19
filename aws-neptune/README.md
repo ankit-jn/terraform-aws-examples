@@ -13,7 +13,7 @@ This Example configuration is used to create the following resources:
 - Custom Endpoint
 - Security Group
 
-Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-neptune/neptune-cluster) for the code-base to utilize [Module: Terraform AWS Neptune, Graph Database Service](https://github.com/ankit-jn/terraform-aws-neptune) in order to create Neptune - Graph Database cluster as stated above.
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-neptune/neptune-cluster) for the code-base to utilize [Module: Terraform AWS Neptune, Graph Database Service](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-neptune) in order to create Neptune - Graph Database cluster as stated above.
 
 ### Authors
 

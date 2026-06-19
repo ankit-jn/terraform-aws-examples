@@ -6,13 +6,13 @@ Set of Example Configurations to provision Fast, flexible NoSQL database for sin
 
 This Example configuration is used to provision DynamoDB table in `PROVISIONED` (Billing Mode).
 
-Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-dynamodb/dynamodb-table-provisioned) for the code-base to utilize [Module: Terraform AWS - DynamoDB](https://github.com/ankit-jn/terraform-aws-dynamodb) in order to provision DynamoDB table in `PROVISIONED` (Billing Mode).
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-dynamodb/dynamodb-table-provisioned) for the code-base to utilize [Module: Terraform AWS - DynamoDB](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-dynamodb) in order to provision DynamoDB table in `PROVISIONED` (Billing Mode).
 
 #### Amazon DynamoDB Example: DynamoDB Table - `PAY-PER-REQUEST` (Billing Mode)
 
 This Example configuration is used to provision DynamoDB table in `PAY-PER-REQUEST` (Billing Mode).
 
-Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-dynamodb/dynamodb-table-pay-per-request) for the code-base to utilize [Module: Terraform AWS - DynamoDB](https://github.com/ankit-jn/terraform-aws-dynamodb) in order to provision DynamoDB table in `PAY-PER-REQUEST` (Billing Mode).
+Refer [Configuration Example](https://github.com/ankit-jn/terraform-aws-examples/tree/main/aws-dynamodb/dynamodb-table-pay-per-request) for the code-base to utilize [Module: Terraform AWS - DynamoDB](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-dynamodb) in order to provision DynamoDB table in `PAY-PER-REQUEST` (Billing Mode).
 
 
 ### Authors

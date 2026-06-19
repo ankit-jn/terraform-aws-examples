@@ -1,6 +1,6 @@
 ## ARJ-Stack: Terraform AWS -> Serverless Amazon Managed Streaming for Apache Kafka (MSK) Example
 
-This Example configuration is a demonstration of [Module: Terraform Serverless Amazon Managed Streaming for Apache Kafka (MSK)](https://github.com/ankit-jn/terraform-aws-msk-serverless) utilization to create Serverless Amazon Managed Streaming for Apache Kafka (MSK) 
+This Example configuration is a demonstration of [Module: Terraform Serverless Amazon Managed Streaming for Apache Kafka (MSK)](https://github.com/ankit-jn/terraform-aws-modules/tree/main/aws-msk-serverless) utilization to create Serverless Amazon Managed Streaming for Apache Kafka (MSK) 
 
 #### Resources to be provisioned as an outcome of this example
 ---
